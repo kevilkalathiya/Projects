@@ -1,0 +1,220 @@
+@media (max-width: 500px) {
+  .side_padding {
+    padding: 0 12px;
+  }
+  /*----------------------------------------------------------------------- navbar start -----------------------------------------------------*/
+
+  .Search {
+    position: absolute;
+    top: 10px;
+    left: 65px;
+  }
+
+  .Cart {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+  }
+
+  .Sign_in {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    top: 10px;
+    left: 39%;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  #collapsibleNavbar {
+    background: #f2f2f2;
+    margin-top: 10px;
+  }
+
+  .navbar-nav li .nav-link {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .navbar-nav li .nav-link:hover {
+    border-bottom: none;
+  }
+
+  .media_drop {
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 1px solid rgb(238, 232, 232);
+  }
+
+  .media_drop a {
+    font-size: 15px !important;
+  }
+
+  .fa-angle-down {
+    font-size: 13px;
+    float: right;
+    margin: 6px;
+    transition: 0.3s;
+  }
+
+  .dropdown-menu {
+    border: none;
+    padding: 0;
+  }
+
+  .dropdown-menu li .dropdown-item {
+    padding: 15px;
+    border-bottom: 1px solid rgb(238, 232, 232);
+  }
+
+  .dropdown-menu li {
+    background-color: #f2f2f2 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2 !important;
+  }
+
+  /*----------------------------------------------------------------------- navbar end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- Slider start -----------------------------------------------------*/
+
+  .carousel-inner {
+    overflow: visible;
+  }
+
+  .carousel-item img {
+    height: 395px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Micro365_img {
+    object-position: 87% 100%;
+  }
+
+  .Minecraft_img {
+    object-position: 60% 100%;
+  }
+
+  .micro_365,
+  .Minecraft {
+    top: 100%;
+    left: 0%;
+    height: 250px;
+    width: 100%;
+    padding: 24px;
+    /* border-bottom: thin solid rgb(222, 222, 222); */
+    box-shadow: 0px 0px 10px rgb(199, 199, 199);
+  }
+
+  .micro_365 h2,
+  .Minecraft h2 {
+    font-size: 24px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 280px;
+  }
+
+  .prev_btn {
+    top: 168%;
+    left: 230%;
+  }
+
+  .next_btn {
+    top: 168%;
+    right: 230%;
+  }
+  /*----------------------------------------------------------------------- Slider end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- Tools start -----------------------------------------------------*/
+
+  .Tools {
+    padding: 280px 0 0 0;
+  }
+
+  .Tools_card {
+    width: 50%;
+  }
+
+  /*----------------------------------------------------------------------- Tools end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- xbox start -----------------------------------------------------*/
+
+  .Xbox {
+    height: auto;
+  }
+
+  .SUb_Xbox {
+    height: 360px;
+    position: relative;
+  }
+
+  .xbox_move {
+    margin-right: 0px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+  }
+
+  /*----------------------------------------------------------------------- xbox end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- For_business start -----------------------------------------------------*/
+
+  .For_business {
+    margin-top: 220px;
+  }
+  .For_business h2 {
+    font-size: 24px;
+  }
+
+  /*----------------------------------------------------------------------- For_business end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- earth start -----------------------------------------------------*/
+
+  .earth {
+    height: 375px;
+    background-size: cover;
+    background-position: 70% 0%;
+  }
+
+  .Earth_card {
+    width: 100%;
+    top: 110%;
+    left: 0%;
+  }
+
+  .Earth_card h2 {
+    font-size: 24px;
+  }
+
+  .Earth_card p {
+    margin: 12px 0 24px 0;
+  }
+  /*----------------------------------------------------------------------- earth end -----------------------------------------------------*/
+
+  /*----------------------------------------------------------------------- footer start -----------------------------------------------------*/
+
+  .Footer_icon {
+    margin: 250px 0 50px 0;
+  }
+
+  .footer_head ul {
+    margin: 0;
+  }
+
+  .footer_head .contact li {
+    margin: 0 18px 0 0;
+  } /*----------------------------------------------------------------------- footer end -----------------------------------------------------*/
+}

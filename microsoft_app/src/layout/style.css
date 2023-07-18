@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.side_padding {
+  padding: 0 75px;
+}
+
+/*----------------------------------------------------------------------- navbar start -----------------------------------------------------*/
+
+.navbar-brand {
+  height: 40px;
+}
+
+.navbar-brand img {
+  height: 23px;
+  width: 100px;
+}
+
+.navbar-nav li .nav-link {
+  font-size: 13px;
+  color: black !important;
+  padding: 0 !important;
+  margin: 8px 11px;
+  border-bottom: 2px solid transparent;
+  transition: 0.11s;
+}
+
+.navbar-nav li .nav-link:hover {
+  border-bottom: 2px solid;
+}
+
+.navbar-nav li .icon {
+  margin: 6px 10px 6px 0px;
+  color: rgb(60, 60, 60) !important;
+}
+
+.second_nav {
+  margin-right: 80px;
+}
+
+.drop_li {
+  position: relative;
+}
+
+#drop {
+  background: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.05) rgba(0, 0, 0, 0.05) #000;
+  position: absolute;
+  top: 100%;
+  left: -860px;
+  width: 1240px;
+  z-index: 100;
+  display: none;
+}
+
+.sub_drop {
+  display: flex;
+}
+
+.sub_drop span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sub_drop ul {
+  padding: 0px;
+}
+
+.sub_drop li {
+  padding: 12px 0px 12px 24px;
+  width: 197px;
+}
+
+.sub_drop li a,
+.drop_foot a {
+  margin: 0;
+  font-size: 13px;
+  color: black !important;
+  padding: 0 !important;
+  border-bottom: 1px solid transparent;
+  transition: 0.11s;
+}
+
+.sub_drop li a:hover,
+#drop .drop_foot a:hover {
+  border-bottom: 1px solid;
+}
+
+#drop .drop_foot {
+  height: 37px;
+  background-color: #e6e6e6;
+  line-height: 37px;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+/*----------------------------------------------------------------------- navbar end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- Slider start -----------------------------------------------------*/
+
+.circle {
+  position: absolute;
+  top: 31px;
+}
+
+.slider_circle {
+  height: 9px !important;
+  width: 9px !important;
+  border: thin solid !important;
+  margin: 0px 15px !important;
+  background: black !important;
+}
+
+.prev_btn {
+  position: absolute;
+  top: 104%;
+  left: 300%;
+  height: 18px;
+}
+
+.next_btn {
+  position: absolute;
+  top: 104%;
+  right: 300%;
+  height: 18px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
+
+.micro_365 {
+  position: absolute;
+  top: 33%;
+  left: 8%;
+  width: 470px;
+}
+
+.micro_365 h2,
+.Minecraft h2 {
+  font-size: 37px;
+}
+
+.micro_365 p,
+.Minecraft p {
+  margin: 20px 0 24px 0;
+}
+
+.micro_365 a {
+  color: black;
+  font-weight: 600;
+}
+
+.micro_365 a span {
+  border-bottom: 2px solid transparent;
+}
+
+.micro_365 a:hover span {
+  border-bottom: 2px solid;
+}
+
+.micro_365 .fa-chevron-right {
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.micro_365 a:hover .fa-chevron-right {
+  transform: translateX(7px);
+}
+
+.micro_365 button,
+.Minecraft button {
+  background: #0067b8;
+  color: white;
+  font-weight: 600;
+}
+
+.micro_365 button:hover,
+.Minecraft button:hover {
+  color: white;
+}
+
+.Minecraft {
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  width: 570px;
+  background: white;
+}
+
+/*----------------------------------------------------------------------- Slider end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- Tools start -----------------------------------------------------*/
+
+.Tools {
+  padding: 80px 0px;
+}
+
+.Tools a,
+.surface .more {
+  color: rgb(0, 0, 238);
+  font-weight: 500;
+}
+
+/*----------------------------------------------------------------------- Tools end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- surface start -----------------------------------------------------*/
+
+.surface img {
+  width: 100%;
+}
+
+.surface h3,
+.surface p {
+  color: black;
+}
+
+.surface .more .fa-chevron-right {
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.more:hover .fa-chevron-right {
+  transform: translateX(7px);
+}
+
+.surface .more:hover span {
+  border-bottom: 2px solid;
+}
+
+/*----------------------------------------------------------------------- surface end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- xbox start -----------------------------------------------------*/
+
+.Xbox {
+  width: 100%;
+  height: 520px;
+}
+
+.SUb_Xbox {
+  background: url(../../public/img/Highlight-Xbox.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.xbox_move {
+  margin-right: 230px;
+}
+
+.xbox_move button {
+  background: #0067b8;
+  color: white;
+}
+
+.xbox_move button:hover {
+  background: #06538e;
+  color: white;
+}
+
+/*----------------------------------------------------------------------- xbox end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- For_business start -----------------------------------------------------*/
+
+.For_business h2 {
+  font-size: 37px;
+  margin-bottom: 15px;
+}
+
+/*----------------------------------------------------------------------- For_business end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- earth start -----------------------------------------------------*/
+
+.earth {
+  height: 520px;
+  width: 100%;
+  background: url("../../public/img/Earth-Day.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.Earth_card {
+  background: white;
+  width: 510px;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+}
+
+.Earth_card h2 {
+  font-size: 37px;
+}
+
+.Earth_card p {
+  margin: 20px 0 24px 0;
+}
+
+.Earth_card button {
+  background: #0067b8;
+  color: white;
+}
+
+.Earth_card button:hover {
+  background: #06538e;
+  color: white;
+}
+
+/*----------------------------------------------------------------------- earth end -----------------------------------------------------*/
+
+/*----------------------------------------------------------------------- footer start -----------------------------------------------------*/
+
+.Footer_icon {
+  margin-bottom: 100px;
+}
+
+.icons {
+  font-size: 25px;
+  margin-left: 33px;
+}
+
+.footer_head {
+  background: #f2f2f2;
+}
+
+.footer_head ul {
+  padding: 36px 107px 0 0;
+}
+
+.footer_head ul li {
+  margin: 9px 0;
+}
+
+.footer_head ul span {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footer_head ul li a {
+  color: #616161;
+  font-size: 11px;
+}
+
+.footer_head ul li a:hover,
+.language a:hover span {
+  color: black;
+  border-bottom: 1px solid;
+}
+
+.footer_head .contact li {
+  margin: 0 0 0 25px;
+}
+
+.language a {
+  color: #616161;
+}
+
+.language a i {
+  font-size: 20px;
+}
+
+.language a span {
+  font-size: 11px;
+}
+
+/*----------------------------------------------------------------------- footer end -----------------------------------------------------*/
