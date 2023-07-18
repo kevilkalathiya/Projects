@@ -1,0 +1,1979 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rajdhani:wght@500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+h1
+{
+        font-family: 'Rajdhani', sans-serif;
+}
+
+/*----------------------------------------------------------------------------- nav start ----------------------------------------------------------*/
+
+nav
+{
+    height: auto;
+    width: 100%;
+    background:#14212b;
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 50px;
+    align-items: center;
+}
+
+nav .contact
+{
+    padding-left:110px;
+}
+
+nav .contact span
+{
+    color: white;
+    font-size: 14px;
+}
+
+nav .contact span i
+{
+    color: #dc3545;
+    font-size: 16px;
+}
+
+nav .social
+{
+    display: grid;
+    grid-template-columns:77% 3% 20%;  
+}
+
+nav .social .social_icon
+{
+    justify-self: end;
+}
+
+nav .social .social_icon a
+{
+    color: white;
+    margin-right:7px;
+    font-size:13px;  
+}
+
+.social .image
+{
+    height: 20px;
+    margin-top: 2px;
+    padding:0 5px;
+    border-left:2px solid gray;
+}
+
+.dropdown select 
+{
+    background: #14212b;
+    color:white;
+    outline: none;
+    border: none;
+}
+
+.dropdown select option
+{
+    background:#d00a2b;
+}
+
+/*------------------------------------------------------------------------------ nav end ------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- header start ---------------------------------------------------------*/
+
+header
+{
+    height: auto;   
+    width: 100%;
+    background: white;
+    display: grid;
+    grid-template-columns:30% 47% 23%;
+    grid-template-rows:110px;
+    font-family: 'Rajdhani', sans-serif;
+    align-items: center;
+}
+
+header .logo
+{
+    padding:0 0 0 110px;
+}
+
+header .logo .transparent_logo
+{
+    display: none;
+}
+
+header .bars
+{
+    display: none;
+}
+
+header .menu
+{
+    text-align: end;
+}
+
+.menu .menu_ul .menu_li
+{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding:20px 30px 35px 0;
+}
+
+.menu_ul .menu_li .menu_a
+{
+    color: black;
+    transition:0.45s;
+    position: relative;
+}
+
+.menu_ul .menu_li .menu_a:hover
+{
+    color:#d00a2b;
+}
+
+.menu_ul .menu_li .menu_a::after
+{
+    content: "";
+    height:1px;
+    width:0%;
+    background: #d00a2b;
+    position: absolute;
+    bottom:-2px;
+    left: 0;
+    opacity: 0;
+    transition: 0.45s;
+}
+
+.menu_ul .menu_li .menu_a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+.menu_ul .menu_li .dropdown
+{
+    position: absolute;
+    top:80px;
+    left: 0;
+    width:250px;
+    text-align: left;
+    background: white;
+    padding:12px 20px ;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateX(90deg);
+    transform-origin:0 0;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.menu_ul .menu_li:hover .dropdown
+{
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+}
+
+.menu_li .dropdown  li
+{
+    padding:10px 0;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu_li .dropdown li::after
+{
+    content: "";
+    height:1px;
+    width: 30px;
+    background: #d00a2b;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    opacity: 0;
+    transition: 0.45s;
+}
+
+.menu_li .dropdown li:hover:after
+{
+    opacity: 1;
+    transform: scalex(10);
+}
+
+.menu_li .dropdown li a
+{
+    color: black;
+    transition: 0.45s;
+}
+
+.menu_li .dropdown li:hover a
+{
+    color:#d00a2b;
+}
+
+header .appointment
+{
+    display: grid;
+    grid-template-columns:10% 90%;
+    text-align: center;
+    line-height:53px;
+    margin-bottom:14px;
+}
+
+header .appointment .search a
+{
+    color: black;
+}
+
+header .appointment .button a
+{
+    display: block;
+    height: 53px;
+    width: 180px;
+    background: #d00a2b;   
+    color: white; 
+    font-weight: bold;
+    margin-left:15px;
+    transition: 0.5s;
+}
+
+header .appointment .button a:hover 
+{
+    background: #212529;
+}
+
+/*-------------------------------------------------------------------------------- header end ---------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------------ section 1 start ------------------------------------------------------*/
+
+.firstsection
+{
+    height:800px;
+    width: 100%;
+    background: linear-gradient(to left, rgba(2, 45, 98, 0) 0, #022d62 100%), linear-gradient(to left, rgba(2, 45, 98, 0) 0, #022d62 100%),
+     transparent url(../image/slider.jpg);
+    background-size:123% 100%;
+    background-position:-160px 0;
+    padding-top: 245px;
+    overflow: hidden;
+}
+
+.firstsection .sec1_info
+{
+    height: auto;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.sec1_info .square
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns:0.7fr 1fr;
+    animation: text 1.5s 1;
+}
+
+.sec1_info .square i
+{
+    font-size: 12px;
+    color: #d00a2b;
+    justify-self: end;
+    margin:4px 5px 0 0;
+}
+
+ .sec1_info .square p
+ {
+    font-weight: bold;
+    justify-self: start;
+    color: white;
+}
+
+.firstsection .sec1_info h1
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 1px;
+    line-height:92px;
+    margin-top: 8px;
+    animation: text 1.5s 1;
+}
+
+.firstsection .sec1_info .consul_video
+{
+    font-family: 'Rajdhani', sans-serif;
+    display: grid;
+    grid-template-columns:27% 12% 13%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.consul_video .free_con 
+{
+    margin-top:5px;
+    animation:button 1.5s 1;
+}
+
+.consul_video .free_con a
+{
+    display: block;
+    height: 60px;
+    width: 190px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #d00a2b;
+    padding:16px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.45s;
+}
+
+.consul_video .free_con a:hover
+{
+    background: #2F4C78;
+}
+
+.consul_video .free_con a::after
+{
+    content: "";
+    height:100px;
+    width:200px;
+    background: white;
+    position: absolute;
+    top:0;
+    left:0;   
+    transform: translate3d(-120% ,-50px,0) rotate3d(0,0,1,45deg); 
+    transition: 0.45s;
+}
+
+.consul_video .free_con a:hover::after
+{
+    transform: translate3d(120%,-100px ,0) rotate3d(0,0,1,90deg);
+}
+
+.consul_video .watch_video
+{
+    display: block;
+    height:65px;
+    width: 65px;
+    color: #d00a2b;
+    background: white;
+    border-radius: 50%;
+    line-height: 65px;
+    animation:play_button 1s infinite linear;
+}
+
+.consul_video span
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding-top: 22px;
+}
+
+@keyframes text
+{
+    from{transform:translateX(-1200px);}
+    to{transform:translateX(0px)}
+}
+
+@keyframes button
+{
+    from{transform:translateY(400px);}
+    to{transform:translateY(0px)}
+}
+
+@keyframes play_button {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3)
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3), 0 0 0 30px rgba(255,255,255, 0)
+    }
+}
+
+/*----------------------------------------------------------------------------- section 1 end -------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------- section 2 start -----------------------------------------------------------*/
+
+.secondsection
+{
+    height: auto;
+    width: 100%;
+    padding:120px 0 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secondsection .sec2_image
+{
+    justify-self: end;
+    position: relative;
+}
+
+.secondsection .sec2_image img
+{
+    height: 99%;
+    width: 100%;
+    animation:sec2_image 3s 1;
+}
+
+.secondsection .sec2_image a
+{
+    display: block;
+    height: 80px;
+    width: 80px;
+    color: white;
+    background:rgb(208, 10, 43);
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    top:240px;
+    left:260px;
+    animation:sec2_play_button 1s infinite linear;
+}
+
+.secondsection .sec2_info
+{
+    width:600px;
+    padding:70px 50px 0 45px;
+}
+
+.sec2_info h4
+{
+    color: #d00a2b;
+}
+
+.sec2_info h1
+{
+    font-size:50px;
+    margin-top: 10px;
+}
+
+.sec2_info .over
+{
+    color: gray;
+    line-height: 25px;
+    margin:10px 0 25px 0;
+    padding-right: 50px;
+}
+
+.sec2_info h2
+{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.sec2_info .check i
+{
+    color: #d00a2b;
+    padding-right:9px;
+    transition: 0.5s ;
+    transform-origin: 12px 12px;
+}
+
+.sec2_info .check:hover i
+{
+    transform: rotate(360deg);
+}
+
+.sec2_info .check p
+{
+    color: gray;
+    line-height: 25px;
+    padding:0 40px;
+    margin:12px 0 25px 0;
+}
+
+@keyframes sec2_image
+{
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes sec2_play_button {
+    0% {
+        box-shadow: 0 0 0 0 rgba(208,10,43,0.3), 0 0 0 10px rgba(208,10,43,0.3), 0 0 0 20px rgba(208,10,43,0.3)
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(208,10,43,0.3), 0 0 0 20px rgba(208,10,43,0.3), 0 0 0 30px rgba(208,10,43,0)
+    }
+}
+
+
+/*------------------------------------------------------------------------- section 2 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 3 start -------------------------------------------------------*/
+
+.thirdsection
+{
+    height: 750px;
+    width: 100%;
+    background: #F5F6F9;
+    padding:100px 0 120px 0;
+}
+
+.thirdsection .sec3_heading
+{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.thirdsection .sec3_heading h4
+{
+    color: #d00a2b;
+}
+
+.thirdsection .sec3_heading h1
+{
+    font-size: 50px;
+}
+
+.thirdsection .sec3_card
+{
+    height: 400px;
+    width:85%;
+    display: grid;
+    grid-template-columns:repeat(4,295px);
+    grid-template-rows: 400px;
+    margin:auto;
+    margin-top:30px;
+    gap: 30px;
+    position: relative;
+    z-index:0;
+}
+
+.sec3_card .card
+{
+   background: white;
+   padding: 30px;
+   transform:translateY(0);
+   transition: 0.5s;
+}
+
+.sec3_card .card:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 6px 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sec3_card .card .card_image
+{
+    height: 170px;
+    width: 235px;
+    overflow: hidden;
+}
+
+.sec3_card .card .card_image img
+{
+    height: 100%;
+    width: 100%;
+    transform:scale(1);
+    transition: 1s;
+}
+
+.sec3_card .card:hover img
+{
+    transform: scale(1.1);
+}
+
+.sec3_card .card .card_info
+{
+    position: relative;
+}
+
+.sec3_card .card_info .image_icon
+{
+    height: 60px;
+    width: 60px;
+    color: white;
+    background: #d00a2b;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    position: absolute;
+    top:-60px;
+    right:10px;
+}
+
+.sec3_card .card_info h3
+{
+    font-size:21px;
+    font-family: 'Rajdhani', sans-serif;
+    margin:25px 0 7px 0;
+}
+
+.sec3_card .card_info span{
+    color: gray;
+    line-height:26px;
+}
+
+.sec3_card  .card_info p
+{
+    margin-top: 10px;
+}
+
+.sec3_card .card_info a
+{
+    color: black;
+    font-weight:600;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sec3_card .card_info a::after
+{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: #d00a2b;
+    position: absolute;
+    bottom:-4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.sec3_card .card:hover  a
+{
+    color: #d00a2b;
+}
+
+.sec3_card .card:hover  a::after
+{
+    width: 100%;
+}
+
+.sec3_card .sec3_animation1
+{
+    position: absolute;
+    top:-50px;
+    right:110px;
+    animation: circle 2.5s infinite linear;
+    z-index: -1;
+}
+
+.sec3_card .sec3_animation2
+{
+    position: absolute;
+    bottom:-40px;
+    left:90px;
+    animation: circle 2.5s infinite linear;
+    z-index: -1;
+}
+
+.sec3_card .sec3_animation3
+{
+    position: absolute;
+    bottom:110px;
+    left:-38px;
+    animation: service 15s infinite linear;
+    z-index: -1;
+}
+
+@keyframes circle
+{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(15px)
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes service
+{
+    0%{
+        transform:rotate(0);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*------------------------------------------------------------------------- section 3 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 4 start -------------------------------------------------------*/
+
+.foursection
+{
+    height: 770px;  
+    width: 100%;
+    padding: 120px 0 63px 0;
+}
+
+.foursection .sec4_image
+{
+    height: 100%;
+    width: 87%;
+    background: lightcyan;
+    margin: auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0)),
+    url(../image/call.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.sec4_image .sec4_video
+{
+    width: 100%;
+    padding-top:240px;
+}
+
+.sec4_image .sec4_video_button
+{
+    display: block;
+    height:120px;
+    width: 120px;
+    color: #d00a2b;
+    background: white;
+    border-radius: 50%;
+    font-size:22px;
+    text-align: center;
+    line-height:120px;
+    margin: auto;
+    animation:play_button 1s infinite linear;
+    /* animation call from section 1 */
+}
+
+/*------------------------------------------------------------------------- section 4 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 5 start -------------------------------------------------------*/
+
+.fifthsection
+{
+    height: auto;
+    width: 100%;    
+    padding-bottom: 150px;
+}
+
+.fifthsection .sec5_card
+{
+    height: auto;
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,305px);
+    gap:25px;   
+}
+
+.fifthsection .sec5_card .card5
+{
+    height: 400px;
+    background: #f5f6f9;
+    text-align: center;
+    padding: 45px 25px;
+    transform:translateY(0);
+    transition: 0.5s;
+    position: relative;
+}
+
+.sec5_card .card5:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 6px 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sec5_card .card5::after
+{
+    content: "";
+    height: 5px;
+    width: 0%;
+    background:#d00a2b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.sec5_card .card5:hover:after
+{
+    width: 100%;
+}
+
+.sec5_card .card5 h3
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.sec5_card .card5 p
+{
+    font-size: 15px;
+    color: gray;
+    line-height: 27px;
+    margin: 10px 0;
+}
+
+.sec5_card .card5 .sec5_icon
+{
+    height: 100px;
+    width: 100px;
+    color: #d00a2b;
+    background: white;
+    font-size: 50px;
+    line-height:100px;
+    margin:35px 0 0 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.3s;
+}
+
+.card5:hover .sec5_icon
+{
+    color: white;
+}
+
+.card5 .sec5_icon::after
+{
+    content: "";
+    height: 3px;
+    width: 3px;
+    background: #d00a2b;
+    position: absolute;
+    top: 46px;
+    left:45px;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.3s linear;
+}
+
+.card5:hover .sec5_icon::after
+{
+    transform: scale(32);
+    visibility: visible;
+}
+
+/*------------------------------------------------------------------------- section 5 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 6 start -------------------------------------------------------*/
+
+.sixsection
+{
+    height: 1000px;
+    background:#f5f6f9;
+    padding: 90px 0 120px 0;
+    position: relative;
+}
+
+.sixsection .sec6_animation img 
+{
+    animation:image 2s infinite ;
+    padding: 0  0  0 230px;
+}
+
+@keyframes image{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.sixsection .Strategy
+{
+    height: auto;
+    width: 93%;
+    background:white;
+    position: absolute;
+    top: 130px;
+    left:106px;
+    display: grid;
+    grid-template-columns: 0.85fr 1fr;
+    padding: 90px 50px 90px 90px;
+    box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Strategy .sec6_info
+{
+    height:auto;
+    padding-right: 60px;
+}
+
+.Strategy .sec6_info h4
+{
+    color: #d00a2b;
+    padding: 20px 0 10px 0;
+}
+
+.Strategy .sec6_info h1
+{
+    font-size: 50px;
+    padding-right: 50px;
+}
+
+.Strategy .sec6_info p
+{
+    color: gray;
+    padding-right: 150px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+.Strategy .sec6_info .progress
+{
+    height:73px;
+    width: 100%;
+    border-bottom: 2px solid rgb(211, 206, 206);
+}
+
+.sec6_info .progress .name_per
+{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    margin-top:21px;
+}
+
+.progress .name_per h5
+{
+    font-size: 15px;
+    padding-top:13px;
+}
+
+.progress .name_per .percentage
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sec6_info .progress .line
+{
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background: #e4e4e4;
+    margin-top:20px;
+}
+
+.progress .line .child_line1,.child_line2,.child_line3
+{
+    height: 5px;
+    width: 55%;
+    background: #d00a2b;
+    border-radius: 10px;
+}
+
+.progress .line .child_line2
+{
+    width: 75%;
+}
+
+.progress .line .child_line3
+{
+    width: 68%;
+}
+
+.Strategy .sec6_image
+{
+    height: auto;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Strategy .sec6_image img 
+{
+    height: 100%;
+    width: 100%;
+}
+
+.Strategy .sec6_image::after
+{
+    content: "";
+    height: 120%;
+    width: 30%;
+    background:linear-gradient(to left ,rgba(255, 255, 255, 0.40),rgba(255, 255, 255, 0));
+    position: absolute;
+    top:-50px;
+    left: -290px;
+    transform: rotate(15deg);
+    transition: 1s;
+}
+
+.Strategy .sec6_image:hover::after
+{
+    animation:image_effect 1.2s 1;
+}
+
+@keyframes image_effect
+{
+    from{left: -290px;}
+    to{left: 750px;}
+}
+
+/*------------------------------------------------------------------------- section 6 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 7 start -------------------------------------------------------*/
+
+.sevensection
+{
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.sevensection .working
+{
+    height: auto;
+    width: 86%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 0.6fr 1.2fr;
+}
+
+.working .sec7_head p
+{
+    color: #d00a2b;
+    font-weight: bold;
+}
+
+.working .sec7_head h1
+{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.sevensection .working .sec7_project
+{
+    text-align: center;
+    padding:40px 0 0 0;
+}
+
+.sevensection .working .sec7_houres
+{
+    padding:40px 0 0 50px;
+    position: relative;
+}
+
+.working h2
+{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 55px;
+}
+
+.working span
+{
+    color: gray;
+}
+
+.working .sec7_houres::after
+{
+    content: "";
+    height: 25px;
+    width: 1px;
+    background:#B9B9B9;
+    position: absolute;
+    top: 75px;
+    left: 0;
+}
+
+.sevensection .sec7_card
+{
+    height: auto;
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(4,310px);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.sevensection .sec7_card .work_card
+{
+    height:100%;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    background: white;
+    padding-bottom:45px;
+    transition: 0.4s;
+    box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sec7_card .work_card:hover {
+    background: #F1F5FE;
+}
+
+.sec7_card .work_card .sec7_icon
+{
+    height: 85px;
+    width: 85px;
+    color: #d00a2b;
+    background:#FEF5F8;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 45px;
+    line-height: 85px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    z-index: 0;
+}
+
+
+.work_card .sec7_icon::after
+{
+    content: "";
+    height:2px;
+    width:2px;
+    border-radius: 70%;
+    background: #14212A;
+    position: absolute;
+    top:35px;
+    left:36px;
+    transition: 0.4s;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.work_card:hover .sec7_icon::after
+{
+    transform: scale(38);
+    visibility: visible;
+}
+
+.work_card:hover .sec7_icon
+{
+    color: white;
+}
+
+.sec7_card .work_card p
+{   
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+.sec7_card .work_card .sec7_arrow
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #d00a2b;
+    background: white;
+    position: absolute;
+    bottom: -20px;
+    left:130px;
+    line-height: 40px;
+    transition: 0.45s;
+    box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.work_card:hover .sec7_arrow
+{
+    color: white;
+    background:#14212A ;
+}
+
+/*------------------------------------------------------------------------- section 7 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 8 start -------------------------------------------------------*/
+
+.eightsection
+{
+    height: auto;
+    width: 100%;
+    padding: 30px 0 100px 10px;
+    display: grid;
+    grid-template-columns: repeat(3,470px);
+    gap: 30px;
+}
+
+.eightsection .sec8_card
+{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.eightsection .sec8_card img
+{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.sec8_card:hover img
+{
+    transform: scale(1.2);
+}
+
+.eightsection .sec8_card::after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom,rgba(208,10,43,0) 0%,rgba(208,10,43,0) 6%,rgba(208,10,43,.65) 52%,rgba(208,10,43,.80) 100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sec8_card:hover:after
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.eightsection .sec8_card .sec8_movement
+{
+    height: 120px;
+    width: 370px;
+    background: white;
+    position: absolute;
+    bottom:-125px;
+    left:49px;
+    display: grid;
+    grid-template-columns: 1fr 0.34fr;
+    padding: 25px 0 29px 35px;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.sec8_card:hover .sec8_movement
+{
+    bottom: 33px; 
+}
+
+.sec8_card .sec8_movement h3
+{
+    font-size: 21px;
+    padding: 10px 0 5px 0 ;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.sec8_card .sec8_movement p
+{
+    color: #d00a2b;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.sec8_card .sec8_movement a
+{
+    display: block;
+    height:65px;
+    width: 65px;
+    font-size: 37px;
+    font-weight:500;
+    text-align: center;
+    line-height: 63px;
+    background: #d00a2b;
+    color: white;
+}
+
+/*------------------------------------------------------------------------- section 8 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 9 start -------------------------------------------------------*/
+
+.ninthsection
+{
+    height: auto;
+    width: 100%;
+    padding: 50px 0 100px 0;
+    display: grid;
+    grid-template-columns:650px 650px;
+    justify-content: center;
+}
+
+.ninthsection .touch
+{
+    height:auto;
+}
+
+.ninthsection .touch h4
+{
+    color: #d00a2b;
+    margin-top: 15px;
+}
+
+.ninthsection .touch h1
+{
+    font-size: 50px;
+    margin:5px 0  10px 0;
+}
+
+.ninthsection .touch p
+{
+    color: gray;
+    padding-bottom:30px;
+}
+
+.ninthsection .touch .sec9_details
+{
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.12fr 0.7fr;
+    margin-bottom: 10px;
+}
+
+.touch .sec9_details .sec9_icon
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: #d00a2b;
+    background: white;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 0;
+    box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sec9_details:hover .sec9_icon
+{
+    color: white;
+}
+
+.sec9_details .sec9_icon::after
+{
+    content: "";
+    height:3px;
+    width:3px;
+    border-radius: 50%;
+    background: #d00a2b;
+    position: absolute;
+    top:27px;
+    left:27px;
+    transition: 0.5s;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.sec9_details:hover .sec9_icon::after
+{
+    transform: scale(20);
+    visibility: visible;
+}
+
+.touch .sec9_details .sec9_info h2
+{
+    font-family: 'Rajdhani', sans-serif; 
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.ninthsection .table
+{
+    height: auto;
+    padding: 55px 60px;
+    background: #F7F7F7;
+}
+
+.table input,select,textarea    
+{
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.table .name9
+{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.table .name9 .first_name
+{
+    padding:0 10px 0 0;
+    position: relative;
+}
+
+.table .name9  .last_name
+{
+    padding:0 0 0 10px;
+    position: relative;
+}
+
+.table .name9 input
+{
+    height: 60px;
+    width:100%;
+    font-size: 16px;
+    padding-left: 20px;    
+}
+
+.table .name9 i
+{
+    color: #d00a2b;
+    position: absolute;
+    top:20px;
+    left:84%;
+}
+
+.table .name9 .last_name i
+{
+    left:88%;
+}
+
+.table select
+{
+    height: 60px;
+    width: 100%;
+    color: gray;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+.table .message
+{
+    position: relative;
+}
+
+.table .message textarea
+{
+    height:190px;
+    width: 100%;
+    padding:20px 0 0 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.table .message i
+{
+    color: #d00a2b;
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.table .submit 
+{
+    position: relative;
+}
+
+.table .submit input
+{
+    height: 60px;
+    width:35%;
+    font-family: 'Rajdhani', sans-serif; 
+    color: white;
+    background: #14212A;
+    float: right; 
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.table .submit i
+{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top:49px;
+    right:18px;
+}
+
+/*------------------------------------------------------------------------- section 9 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 10 start -------------------------------------------------------*/
+
+.tensection 
+{
+    height: auto;
+    width: 100%;
+    background:#F5F6FA;
+    padding: 120px 0 120px 280px;
+    position: relative;
+}
+  
+.tensection .feedback_container
+{
+    height: auto;
+    width:62%;
+    text-align: center;
+    position: absolute;
+    top: 16.5%;
+    left: 18.5%;  
+}
+
+.feedback_container h4
+{
+    color: #d00a2b;
+}
+
+.feedback_container h1
+{
+    font-size: 50px;
+    margin: 0 0 45px 0;
+}
+
+.feedback_container .client_img 
+{
+    height: 87px;
+    width: 95px;
+    background: white;
+    margin: auto;
+    padding: 8px;
+}
+
+.feedback_container p 
+{
+    color: gray;
+    font-size: 22px;
+    line-height: 37px;
+    margin: 10px 0 30px 0;
+}
+
+.feedback_container h3
+{
+    font-family: 'Rajdhani', sans-serif;
+    color: #18284A;
+}
+
+.feedback_container h5 
+{
+    color: #d00a2b;
+    padding: 7px 0 0 0;
+}
+
+/*------------------------------------------------------------------------- section 10 end -------------------------------------------------------*/
+
+/*------------------------------------------------------------------------- section 11 start -------------------------------------------------------*/
+
+.elevensection
+{
+    height: auto;
+    width: 100%;
+    padding:100px 0 120px 0;
+}
+
+.elevensection .sec11_heading
+{
+    height: 120px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.elevensection .sec11_heading p
+{
+    color: #d00a2b;
+    font-weight: bold;
+}
+
+.elevensection .sec11_heading h1
+{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.elevensection .sec11_card
+{
+    height: auto;
+    width: 85%;
+    background: white;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    gap: 25px;
+
+}
+
+.elevensection .sec11_card .card11
+{
+    height: 560px;
+    box-shadow: 6px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card11 .sec11_image
+{
+    height: 310px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card11 .sec11_image img
+{
+    height: 100%;
+    width: 100%;
+    transition: 0.45s;
+}
+
+.card11:hover .sec11_image img
+{
+    transform: rotate(5deg) scale(1.1);
+}
+
+.card11 .sec11_image p
+{
+    height: auto;
+    width: auto;
+    background: #d00a2b;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    padding:2px 17px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition:0.45s;
+}
+
+.card11:hover .sec11_image p
+{
+    color: #d00a2b;
+    background: white;
+}
+
+.sec11_card .card11 .sec11_info
+{
+    padding:20px 0 0 20px;
+}
+
+.sec11_info .sec11_author
+{
+    display: grid;
+    grid-template-columns:8% 92%;
+}
+
+.sec11_info .sec11_author img
+{
+    border-radius: 10px;
+}
+
+.sec11_info .sec11_author .author_name
+{
+    font-family: 'Rajdhani', sans-serif;
+    color: gray;
+    font-size: 15px;
+    font-weight:bold;
+    padding:3px 0 0 0;
+}
+
+.sec11_info .sec11_author .author_name i
+{
+    color: #d00a2b;
+    padding:0 5px 0 20px;
+    font-size: 13px;
+}
+
+.card11 .sec11_info h2
+{
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 37px;
+}
+
+.card11 .sec11_info h2 a
+{
+    color: black;
+    position: relative;
+}
+
+.card11 .sec11_info h2 a::after
+{
+    content: "";
+    height:1.5px;
+    width: 0%;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.7s ;
+}
+
+.card11:hover .sec11_info h2 a::after
+{
+    width: 100%;
+}
+
+.card11 .sec11_info p
+{
+    font-size: 15px;
+    color: gray;
+    line-height: 25px;
+    padding:10px 0 12px 0;
+}
+
+.card11 .sec11_info .readmore a
+{
+    color: black;
+    position: relative;
+    transition: 0.45s;
+}
+
+.card11:hover .sec11_info .readmore a
+{
+    color:#d00a2b;
+}
+
+.card11 .sec11_info .readmore a i
+{
+    padding:0 0 0 5px;
+}
+
+.card11 .sec11_info .readmore a::before
+{
+    content: "";
+    height: 1.5px;
+    width: 12px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card11 .sec11_info .readmore a::after
+{
+    content: "";
+    height: 1.5px;
+    width: 0px;
+    background: #d00a2b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.45s;
+}
+
+.card11:hover .sec11_info .readmore a::after
+{
+    width: 75%;
+}
+
+
+/*------------------------------------------------------------------------- section 11 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- section 12 start -------------------------------------------------------*/
+
+.twelvesection
+{
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.twelvesection .sec12_back
+{
+    height: 80px;
+    width: 70%;
+    background: #414350;
+    position: absolute;
+    bottom:-80px;
+    left:230px;
+    border-radius:5px;
+}
+
+.twelvesection .sec12_logo
+{
+    height: 130px;
+    width: 87%;
+    background: #d00a2b;
+    position: absolute;
+    bottom: -60px;
+    left:100px;
+    border-radius:5px;
+    padding:30px 70px;
+}
+
+.twelvesection .sec12_logo img
+{
+    padding:0 60px;
+}
+
+/*------------------------------------------------------------------------- section 12 end -------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------- footer start -------------------------------------------------------*/
+
+.footer
+{
+    height: auto;
+    width: 100%;
+    background-color: #040813;
+    padding:180px 0 100px 0;
+}
+
+.footer .footer_container 
+{
+    height: auto;
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.footer_container h2 
+{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    margin: 0 0 17px 0;
+}
+
+.about_us p 
+{
+    color: white;   
+    line-height: 28px;
+    padding-right: 40px;
+}
+
+.about_us .footersocial_icon 
+{
+    height: 50px;
+    width: 100%;
+    margin-top:20px;
+}
+
+.about_us .footersocial_icon ul 
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+ 
+.footersocial_icon ul li a 
+{
+    display: block;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    color: gray;
+    line-height: 45px;
+    font-size: 17px;
+    transition:0.5s;
+}
+  
+.footersocial_icon ul li a:hover 
+{
+    background: #d00a2b;
+    color: white;
+}
+
+.useful_links li,.help li 
+{
+    font-size: 15px;
+    margin:0 0 18px 0;
+}
+
+.useful_links li a,.help li a 
+{
+    color: white;
+    transition: 0.4s;
+}
+  
+.useful_links li a:hover 
+{
+    color: #d00a2b;
+}
+  
+.help li a:hover 
+{
+    color: #d00a2b;
+}
+
+.location_email 
+{
+    color: white;
+}
+
+.location_email p 
+{
+    margin: 15px 0 20px 0;
+}
+
+.location_email .location i 
+{
+    color: gray;
+    padding:0 8px 0 0;
+}
+
+.location_email .email 
+{
+    position: relative;
+    margin: 30px 0 0 0;
+}
+  
+.email input 
+{
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 0 0 15px;
+    font-size: 17px;
+}
+  
+.email input::placeholder 
+{
+    font-size: 17px;
+    color: rgb(194, 193, 193);
+}
+  
+.email button 
+{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #d00a2b;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------- footer end -------------------------------------------------------*/
+

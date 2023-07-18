@@ -1,0 +1,547 @@
+@media (max-width:500px)
+{
+    /*--------------------------------------------------------------------------- nav start -------------------------------------------------------*/
+    nav
+    {
+        display: none;
+    }
+    /*--------------------------------------------------------------------------- nav end -------------------------------------------------------*/
+
+
+    /*--------------------------------------------------------------------------- header start -------------------------------------------------------*/    
+    header .logo .child_logo
+    {
+        display: none;
+    }
+
+    header .menu
+    {
+        display: none;
+    }
+
+    header .appointment
+    {
+        display: none;
+    }
+
+    header
+    {
+        height: 50px;
+        display: grid;
+        grid-template-columns:85% 15%;
+        align-items:start;
+        background:#D00A2B;
+    }
+
+    header .logo
+    {
+        padding:5px 0 0 30px;
+    }
+
+    header .logo .transparent_logo
+    {
+        display:block;
+    }
+
+    header .bars
+    {
+        display: block;
+        font-size: 27px;
+        padding-top: 10px;
+        color: white;
+    }
+
+    /*--------------------------------------------------------------------------- header end -------------------------------------------------------*/
+
+
+    /*--------------------------------------------------------------------------- section 1 start -------------------------------------------------------*/
+
+    .firstsection
+    {
+        height:500px;
+        background-size:cover;
+        background-position:center center;
+        padding-top:170px;
+    }
+
+    .firstsection .sec1_info
+    {
+        width: 300px;
+    }
+
+    .sec1_info .square
+    {
+        grid-template-columns:0.3fr 1fr;
+    }
+    
+    .firstsection .sec1_info h1
+    {
+        font-size: 30px;
+        line-height:45px;
+        margin-top:10px;
+    }
+
+    .consul_video .free_con 
+    {
+        margin-top:0px;
+    }
+
+    .consul_video .free_con a
+    {
+        width: 150px;
+        font-size: 16px;
+        padding:18px 0px;
+    }
+
+    .consul_video .watch_video
+    {
+        display: none;
+    }
+
+    .consul_video span
+    {
+        display: none;
+    }
+
+    /*--------------------------------------------------------------------------- section 1 end -------------------------------------------------------*/
+
+    
+    /*--------------------------------------------------------------------------- section 2 start -----------------------------------------------------*/
+
+    .secondsection
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .secondsection .sec2_image img
+    {
+        height:100%;
+        width:97%;
+        justify-self: center;
+    }
+
+    .secondsection .sec2_image a
+    {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        top:170px;
+        left:185px;
+    }
+
+
+    .secondsection .sec2_info
+    {
+        width:483px;
+        padding:50px 0 0 35px ;
+    }
+
+    .sec2_info h1
+    {
+        font-size:30px;
+        padding-right:35%;
+    }
+
+    .sec2_info .over
+    {
+        margin:15px 0 30px 0;
+        padding-right: 50px;
+    }
+
+    .sec2_info .check h2
+    {
+        font-size: 16px;
+    }
+
+    .sec2_info .check i
+    {
+        font-size: 18px;
+        transform-origin: 9px 9px;
+    }
+
+    .sec2_info .check p
+    {
+        padding-left:28px;
+    }
+
+    /*------------------------------------------------------------------------- section 2 end ---------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 3 start -------------------------------------------------------*/
+
+    .thirdsection .sec3_heading h1
+    {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .sec3_card .media_card
+    {
+        display: none;
+    }   
+    
+    .thirdsection .sec3_card
+    {
+        width: 95%;
+        grid-template-columns:1fr;
+    }
+
+    .sec3_card .card .card_info
+    {
+        padding-right:60px;
+    }
+     
+    .sec3_card .card_info span br 
+    {
+        display: none;
+    }
+
+    .sec3_card .sec3_animation1
+    {
+        top:-60px;
+        right:65px;
+    }
+    
+    .sec3_card .sec3_animation2
+    {
+        bottom:-50px;
+        left:50px;
+    }
+
+    .sec3_card .sec3_animation3
+    {
+        display: none;
+    }
+
+
+    /*------------------------------------------------------------------------- section 3 end -------------------------------------------------------*/
+    
+
+    /*------------------------------------------------------------------------- section 4 start -------------------------------------------------------*/
+
+    .foursection
+    {
+        height:500px;  
+        padding:60px 0;
+    }
+
+    .foursection .sec4_image
+    {
+        width: 100%;
+    }
+
+    .sec4_image .sec4_video
+    {
+        padding-top:150px;
+    }
+    
+    .sec4_image .sec4_video_button
+    {
+        height:80px;
+        width: 80px;
+        line-height:80px;
+    }
+
+    /*------------------------------------------------------------------------- section 4 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 5 start -------------------------------------------------------*/
+
+    .fifthsection
+    {
+        padding-bottom: 120px;
+    }
+
+    .fifthsection .sec5_card
+    {
+        width:95%;
+        grid-template-columns:1fr;  
+    }
+
+    .fifthsection .sec5_card .card5
+    {
+        height:375px ;
+        padding: 45px 45px;
+    }
+     
+    .sec5_card .card5 .sec5_icon
+    {
+        margin:35px 0 0 135px;
+    }
+
+    /*------------------------------------------------------------------------- section 5 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 6 start -------------------------------------------------------*/
+
+    .sixsection
+    {
+        height: 1300px;
+    }
+
+    .sixsection .Strategy
+    {
+        width: 96%;
+        left: 10px;
+        padding: 90px 40px;
+        grid-template-columns:1fr;
+    }
+
+    .Strategy .sec6_info
+    {
+        padding-right:0px;
+    }
+
+    .Strategy .sec6_info h1
+    {
+        font-size:25px;
+        padding-right:100px;
+    }
+
+    .Strategy .sec6_info p
+    {
+        font-size: 15px;
+        padding-right:0px;
+        line-height: 27px;
+    }
+
+    .Strategy .sec6_image
+    {
+        margin-top: 30px;
+    }
+
+    /*------------------------------------------------------------------------- section 6 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 7 start -------------------------------------------------------*/
+
+    .sevensection .working
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .working .sec7_head h1
+    {
+        font-size:30px;
+        margin-top: 10px;
+    }
+
+    .sevensection .working .sec7_project
+    {
+        text-align: left;
+    }
+
+    .sevensection .working .sec7_houres
+    {
+        padding:40px 0 0 0px;
+    }
+
+    .working .sec7_houres::after
+    {
+        display: none;
+    }
+     
+    .sevensection .sec7_card
+    {
+        width: 95%;
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .sevensection .sec7_card .work_card
+    {
+        width:100%;
+    }
+
+    .sec7_card .work_card .sec7_arrow
+    {
+        bottom: -20px;
+        left:215px;
+    }
+
+    /*------------------------------------------------------------------------- section 7 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 8 start -------------------------------------------------------*/
+
+    .eightsection
+    {
+        grid-template-columns: 460px;
+    }
+    
+
+    .eightsection .media8_card
+    {
+        display: none;
+    }
+    
+    /*------------------------------------------------------------------------- section 8 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 9 start -------------------------------------------------------*/
+
+    .ninthsection
+    {
+        padding: 50px 0 100px 10px;
+        grid-template-columns:460px;
+        justify-content: left;
+    }
+
+    .ninthsection .touch h1
+    {
+        font-size: 27px;
+        margin:15px 0  10px 0;
+    }
+
+    .ninthsection .touch .sec9_details
+    {
+        height: 80px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.18fr 0.7fr;
+        margin-bottom: 10px;
+    }
+
+    .table .name9
+    {
+        grid-template-columns:1fr;
+    }
+
+    .table .name9 .first_name
+    {
+        padding:0 0 0 0;
+    }
+
+    .table .name9  .last_name
+    {
+        padding:30px 0 0 0;
+
+    }
+
+    .table .name9 i
+    {
+        top:20px;
+        left:90%;
+    }
+    
+    .table .name9 .last_name i
+    {
+        top: 50px;
+        left:90%;
+    }
+
+    .table .submit input
+    {
+        width:50%;
+        margin-top: 22px;
+    }
+    
+    .table .submit i
+    {
+        top:46px;
+        right:12px;
+    }
+    
+    /*------------------------------------------------------------------------- section 9 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 10 start -------------------------------------------------------*/
+
+    .tensection 
+    {
+        padding: 120px 0 100px 0;
+    }
+    
+    .tensection .feedback_container
+    {
+        width: 100%;
+        padding: 0 20px;
+        left: 0;
+    }
+
+    .feedback_container h1
+    {
+        font-size: 27px;
+        margin: 15px 0 45px 0;
+    }
+
+    .feedback_container p 
+    {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    /*------------------------------------------------------------------------- section 10 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 11 start -------------------------------------------------------*/
+
+    .elevensection .sec11_heading
+    {
+        height:70px;
+    }
+
+    .elevensection .sec11_heading h1
+    {
+        font-size: 30px;
+    }
+
+    .elevensection .sec11_card
+    {
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap:40px;
+    }
+
+    .elevensection .sec11_card .card11
+    {
+        height: 590px;
+    }
+
+    .card11 .sec11_image
+    {
+        height: 340px;
+    }
+
+    /*------------------------------------------------------------------------- section 11 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- section 12 start -------------------------------------------------------*/
+
+    .twelvesection .sec12_back
+    {
+        left:75px;
+    }
+    
+    .twelvesection .sec12_logo
+    {
+        left:33px;
+        padding:40px 110px;
+    }
+
+    .twelvesection .sec12_logo .m12_logo
+    {
+        display: none;
+    }
+    
+    /*------------------------------------------------------------------------- section 12 end -------------------------------------------------------*/
+
+
+    /*------------------------------------------------------------------------- footer start -------------------------------------------------------*/
+
+    .footer .footer_container
+    {
+        width: 95%;
+        grid-template-columns: 100%;
+        gap: 30px;
+    }
+
+    .about_us .footersocial_icon ul 
+    {
+        grid-template-columns: 13% 13% 13% 13%;
+    }
+
+    /*------------------------------------------------------------------------- footer end -------------------------------------------------------*/
+
+}

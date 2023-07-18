@@ -1,0 +1,803 @@
+@media (max-width:500px)
+{
+    /*----------------------------------------------------------------------- nav start --------------------------------------------------------- */
+    nav .nav_info
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    nav .nav_info p
+    {
+        margin:0 20px 0 100px;
+    }
+    nav .social
+    {
+        display: none;
+    }
+
+    /*------------------------------------------------------------------------ nav end ---------------------------------------------------------- */
+
+    /*--------------------------------------------------------------------- header start -------------------------------------------------------- */
+    header .menu_button
+    {
+        display: block;
+        width: 20%;
+        background: white;
+        text-align: center;
+        font-size: 30px;
+        padding-top:10px;
+    }
+
+    header .menu_button a 
+    {
+        color:#40B554;
+    }
+
+    header .menu_button:hover a 
+    {
+        color:#A8CF45 ;
+    }
+
+    header .logo
+    {
+        width: 80%;
+        text-align: right;
+        padding:10px 20px 5px 0;
+    }
+
+    header .menu
+    {
+        display: none;
+    }
+
+    header .header_button
+    {
+        display: none;
+    }
+
+    /*---------------------------------------------------------------------- header end --------------------------------------------------------- */
+
+    /*------------------------------------------------------------------- section 1 start --------------------------------------------------------*/
+
+    .firstsection .sec1_slider
+    {
+        height:430px;  
+    }
+
+    .firstsection .sec1_info
+    {
+        top:0;
+        left:0;
+        padding:25px;
+    }
+
+    .sec1_info h1
+    {
+        font-size:33px ;
+        line-height:30px;
+        margin-top:60px;
+    }
+
+    .sec1_info p
+    {
+        font-size: 15px;
+    }
+
+    .sec1_info p br
+    {
+        display: none;
+    }
+
+    .sec1_info .button
+    {
+        display: block;
+        margin:30px 0 0 10px;
+    }
+
+    .sec1_info .sec1_button
+    {
+        margin:0 0 8px 0;
+    }
+
+    .sec1_info .sec1_button a
+    {
+        width: 97%;
+        letter-spacing: 2px;
+    }
+
+    /*------------------------------------------------------------------- section 1 end --------------------------------------------------------*/
+
+    /*------------------------------------------------------------------ section 2 start -------------------------------------------------------*/
+
+    .secondsection
+    {
+        height: 300px;
+    }
+    .secondsection .head_div
+    {
+        top:-30px;
+        left:35px;
+    }
+    .head_div .icon_div
+    {
+        width:45%;
+        margin:0 20px 30px 0;
+    }
+
+    .icon_div .icon
+    {
+        margin-left:50px;
+    }
+
+    .icon_div p 
+    {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    /*--------------------------------------------------------------------- section 2 end ---------------------------------------------------------*/
+
+
+    /*--------------------------------------------------------------------- section 3 start ---------------------------------------------------------*/
+    .thirdsection
+    {
+        height: 830px;
+        padding-top:0px;
+    }
+    .thirdsection .sec3_info
+    {
+        width: 100%;
+    }
+
+    .sec3_info .who_we h1{
+        font-size: 26px;
+        line-height:30px;
+    }
+
+    .sec3_info .who_we p
+    {
+        font-size: 14px;
+    }
+
+    .thirdsection .sec3_image
+    {
+        width: 95%;
+    }
+
+    .thirdsection .sec3_image img
+    {
+        object-fit:cover;
+    }
+    .sec3_image .year25
+    {
+        height: 150px;
+        width: 150px;
+        top:-27px;
+        right:-12px;
+    }
+
+    .sec3_image .year25 h1{
+        font-size:35px;
+    }
+    
+    .sec3_image .year25 p
+    {
+        font-size:15px;
+    }
+
+    /*--------------------------------------------------------------------- section 3 end ---------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 4 start ---------------------------------------------------------*/
+
+    .fourthsection
+    {
+        height: 880px;
+        padding-bottom: 50px;
+       
+    }
+    .fourthsection .sec4_card
+    {
+        height: 220px;
+        width:100%;
+        padding:25px;
+        margin:10px;
+    }
+
+    .sec4_card .sec4_icon
+    {
+        height: 60px;
+        width: 60px;
+        font-size: 25px;
+        line-height:60px;
+    }
+
+    .sec4_card p{
+        font-size:16px;
+        margin:10px 0 5px 0;
+    }
+
+    .sec4_card span
+    {
+        font-size: 14px;
+    }
+
+    .sec4_card .arrow
+    {
+        height: 65px;
+        width: 65px;
+        line-height: 65px;
+        font-size:23px;
+        bottom:-30px;
+        left:195px;
+    }
+
+    .fourthsection .seed
+    {
+        animation: seed 1s 1;
+    }
+
+    .fourthsection .tractor
+    {
+        animation: seed 2s 1;
+    }
+
+    .fourthsection .apple
+    {
+        animation: seed 3s 1;
+    }
+
+    @keyframes seed 
+    {
+    from
+    {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to 
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+
+    @keyframes tractor 
+    {
+    from
+    {
+        transform: translateY(600px);
+        opacity: 0;
+    }
+
+    to 
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+
+    @keyframes apple 
+    {   
+    from
+    {
+        transform: translateY(900px);
+        opacity: 0;
+    }
+
+    to 
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }
+
+
+    /*--------------------------------------------------------------------- section 4 end ----------------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------- section 5 start ----------------------------------------------------------*/
+    .fifthsection
+    {
+      height:350px;
+      width: 100%;
+      background-size: 100% 100%;
+      background-position:0 0;
+      padding-top:70px;
+    }
+
+    .fifthsection .sec5_info
+    {
+        height: 210px;
+        width: 430px;
+    }
+
+
+    .sec5_info h1
+    {
+        font-size:25px;
+        line-height:30px ;
+    }
+
+    .sec5_info p 
+    {
+        font-size: 15px;
+        margin: 20px 0 40px 0;
+    }
+
+    /*-------------------------------------------------------------------- section 5 end -----------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 6 start ----------------------------------------------------------*/
+
+    .sixsection
+    {
+        padding-bottom:30px;    
+    }
+
+    .sixsection .sec6_info
+    {
+        height: 200px;
+        width: 100%;
+    }
+
+    .sec6_info h1
+    {
+        font-size: 26px;
+        line-height:30px;
+    }
+
+    .sec6_info p
+    {
+        font-size: 15px;
+    }
+
+    .sec6_info p br 
+    {
+        display: none;
+    }
+
+    .sixsection .sec6_card
+    {
+        width:100%;
+    }
+
+    .sec6_card .card
+    {
+        width: 100%;
+        padding:0px 15px;
+        margin-bottom: -150px;
+    }
+
+    .sec6_card .card .card_heading
+    {
+        height:100px;
+    }
+
+    .card_heading .icon
+    {
+        line-height:70px;
+    }
+
+    .card .card_heading .icon_info
+    {
+        padding-top: 20px;
+    }
+    .card_heading .icon_info span
+    {
+        font-size: 17px;
+    }
+    
+    .card_heading .icon_info p
+    {
+        font-size: 14px;
+    }
+    .card_heading .icon_info p br 
+    {
+        display: none;
+    }
+
+    .sec6_card .card .image
+    {
+        height:200px;
+    }
+
+    .card .image img 
+    {
+        object-fit: cover;
+    }
+
+    .card .darkshadow .image .shadow
+    {
+        height: 200px;
+    }
+
+    .sec6_card .card .info 
+    {
+        height: 150px;
+        padding:19px;
+    }
+
+    .card .info p
+    {
+        font-size: 14px;
+    }
+
+    /*--------------------------------------------------------------------- section 6 end -----------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 7 start ----------------------------------------------------------*/
+
+    .sevensection
+    {
+        padding-bottom:20px;
+    }
+    .sevensection .sec7_head
+    {
+        width: 100%;
+    }
+
+    .sec7_head .sec7_info
+    {
+        height: 180px;
+        width:100%;
+        padding: 25px;
+    }
+
+    .sec7_head .sec7_info span
+    {
+        font-size:27px;
+        line-height:30px;
+    }
+
+    .sec7_head .sec7_info p
+    {
+        font-size: 15px;
+    }
+
+    .sec7_head .map
+    {
+        height: 300px;
+        padding-left:10px;
+    }
+
+    .sec7_head .map img
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sec7_head .number
+    {
+        padding:15px;
+    }
+
+    .sec7_head .number .counting
+    {
+        width:50%;
+        border-bottom: thin solid rgb(200, 192, 192);
+        padding: 10px;
+    }
+
+    .sec7_head .number .counting span
+    {
+        font-size:33px;
+    }   
+
+    .sec7_head .number .counting p
+    {
+        font-size:16px;
+    }
+
+    .sec7_head .number .media_border1
+    {
+        border-right: none;
+    }
+
+    .sec7_head .number .media_border2
+    {
+        border-bottom: none;
+    }
+
+    .sec7_head .number .border
+    {
+        border: none;
+    }
+
+    /*-------------------------------------------------------------------- section 7 end ----------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 8 start ----------------------------------------------------------*/
+
+    .eightsection
+    {
+        height: 350px;
+        padding-top:60px;
+    }
+
+    .eightsection .sec8_info
+    {
+
+        height: 300px;
+        width:100%; 
+        margin:auto;
+        padding:21px;
+    }
+
+    .eightsection .sec8_info span
+    {
+        font-size:26px;
+        line-height:30px;
+    }
+
+    .eightsection .sec8_info p
+    {
+        font-size: 14px;
+    }
+
+
+    /*-------------------------------------------------------------------- section 8 end ----------------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------- section 9 start ----------------------------------------------------------*/
+    .ninthsection
+    {
+        padding: 30px 0;
+    }
+
+    .ninthsection .sec9_iamge
+    {
+        height:240px;
+        width:96%;
+    }
+
+    .ninthsection .sec9_iamge img
+    {
+        height: 93%;
+        width: 96%;
+        object-fit: cover;
+        border-radius: 10px;
+        position: absolute;
+        top:9px;
+        left:10px;
+    }
+
+    .ninthsection .sec9_info
+    {
+        width: 100%;
+        padding:20px 20px 0px 20px;
+    }
+
+    .sec9_info .sec9_heading p
+    {
+        font-size: 15px;
+    }
+
+    .sec9_info .sec9_heading h1
+    {
+        font-size:26px;
+        line-height:33px;
+        margin:15px 0 ;
+    }
+
+    .sec9_info .sec9_heading span
+    {
+        font-size: 14px;
+    }
+
+    .sec9_info .product_card .card
+    {
+        width: 100%;
+    }
+
+    .product_card .card .icon
+    {
+        height: 60px;
+        width: 60px;
+        line-height:55px;
+        font-size:25px;
+    }
+
+    .product_card .card h2
+    {
+        font-size:18px;
+        margin:15px 0 10px 0;
+    }
+
+    .product_card .card span
+    {
+        font-size: 14px;
+    }
+
+    /*-------------------------------------------------------------------- section 9 end ----------------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------- section 10 start ---------------------------------------------------------*/
+
+    .tensection
+    {
+        padding: 30px 0;
+    }
+    .tensection .sec10_heading
+    {
+        height: 100px;
+    }
+
+    .tensection .sec10_heading h1
+    {
+        font-size:27px;
+        padding-top:0px;
+    }
+
+    .tensection .sec10_heading .line
+    {
+        margin:30px 0 0 42%;
+    }
+
+    .tensection .sec10_card .newscard
+    {
+        height:430px;
+        width: 96%;
+        margin-bottom:20px;
+    }
+
+    .sec10_card .newscard .image
+    {
+        height: 230px;
+    }
+
+    .sec10_card .newscard .firstimage img 
+    {
+        object-fit: cover;
+    }
+
+    .newscard .sec10_info a
+    {
+        font-size: 17px;
+    }
+
+    .newscard .sec10_info p
+    {
+        font-size: 13px;
+    }
+
+    .newscard .sec10_info span
+    {
+        font-size: 14px;
+    }
+
+    /*-------------------------------------------------------------------- section 10 end ---------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 11 start ---------------------------------------------------------*/
+
+    .elevensection
+    {
+        height: 370px;
+        padding: 30px 0  0 0;
+    }
+
+    .elevensection .sec11_heading
+    {
+        width: 100%;
+    }
+
+    .elevensection .sec11_heading h1
+    {   
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    .elevensection .about_us
+    {
+        margin:0;
+    }
+
+    .elevensection .about_us .slider
+    {
+        height: 200px;
+        width: 97%;
+        border: 1px solid;
+        margin: 0;
+    }
+
+    .elevensection .about_us .none {
+        display: none;
+    }
+
+    .about_us .slider span
+    {
+        font-size:16px;
+        line-height: 23px;
+    }
+
+    .slider .profile
+    {
+        margin:20px 0 0 130px;
+    }
+
+
+    /*-------------------------------------------------------------------- section 11 end ---------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 12 start ---------------------------------------------------------*/
+
+    .twelvesection .logo_slider .logo
+    {
+        width: 50%;
+    }
+
+    .twelvesection .logo_slider .logo_none
+    {
+        display: none;
+    }
+
+    /*-------------------------------------------------------------------- section 12 end ---------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------- section 13 start ---------------------------------------------------------*/
+
+    .thirteensection
+    {
+        padding:25px;
+    }
+    .thirteensection .sec13_info
+    {
+        width: 90%;
+    }
+    .thirteensection .sec13_info h1
+    {
+        font-size: 25px;
+    }
+
+    .thirteensection .sec13_info a
+    {
+        margin:20px 0 0 34%;
+    }
+
+    /*-------------------------------------------------------------------- section 13 end ---------------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------- footer start ---------------------------------------------------------*/
+
+    footer
+    {
+        padding: 40px 0 40px 0; 
+    }
+
+    footer .footer_main
+    {
+        width: 88%;
+    }
+    .footer_main .footerlogo
+    {
+        width: 100%;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    .footer_main .services
+    {
+        width: 50%;
+        margin: 35px 0 25px 0;
+    }
+
+    .footer_main .company
+    {
+        width: 50%;
+        margin: 35px 0 25px 0;
+    }
+
+    .footer_main .newsletter
+    {
+        width: 100%;
+        padding-right:30px;
+        font-size: 14px;
+    }
+
+    .footer_main .newsletter input
+    {
+        width:410px;
+    }
+
+    .footer_main .newsletter a
+    {
+        width: 410px;
+    }
+
+    /*-------------------------------------------------------------------- footer end ---------------------------------------------------------*/
+}

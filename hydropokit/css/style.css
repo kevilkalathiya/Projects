@@ -1,0 +1,1594 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+.effect_button a
+{
+    display: block;
+    height: 43px;
+    width: 140px;
+    background: #40B554;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-align:center;
+    border-radius:40px;
+    transition: 0.4s;
+}
+
+.effect_button a:hover
+{
+    background: #A8CF45;
+}
+
+/*----------------------------------------------------------------------- nav start --------------------------------------------------------- */
+nav
+{
+    height: 40px;
+    width: 100%;
+    background:#40B554;
+    display: flex;
+}
+
+nav .nav_info
+{
+    height: 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+
+nav .nav_info p
+{
+    margin:0 20px 0 150px;
+}
+
+nav .social
+{
+    height: 40px;
+    width:50%;
+    padding:8px 120px 0 0;
+}
+
+nav .social ul{
+    display: flex;
+    float: right;
+    list-style: none;
+    gap:6px;
+}
+
+nav .social a
+{
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #40B554;
+    background: white;
+    text-align: center;
+    line-height:25px;
+    font-size: 13px;
+    transition: 0.1s;
+}
+
+nav .social a:hover {
+  animation:social 0.2s 1 linear;
+  color: white;
+  background:#52c666;
+}
+
+@keyframes social
+{
+    from{transform: scale(1);color: #40B554;background: white;}
+    to{transform: scale(1.2);}
+}
+
+/*------------------------------------------------------------------------ nav end ---------------------------------------------------------- */
+
+
+/*--------------------------------------------------------------------- header start -------------------------------------------------------- */
+
+header
+{
+    height: auto;
+    width: 100%;
+    background: white;
+    display: flex;
+}
+
+header .logo
+{
+    height: auto;
+    width: 30%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header .menu
+{
+    height: 80px;
+    width:50%;
+}
+
+.menu_ul 
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu_li 
+{
+    display: inline;
+    margin-left: 40px;
+    padding:15px 0;
+    position: relative;
+}
+
+.menu_li .menu_a
+{
+    color: black;
+    font-weight: 500;
+}
+
+.menu_li:hover .menu_a
+{
+    color: #A8CF45;
+}
+
+.menu_li .home
+{
+    color: #A8CF45;
+    font-weight: bold;
+}
+
+.menu_li i
+{
+    font-size: 12px;
+}
+
+.drop_down 
+{
+    width: 130px;
+    background: white;
+    padding:15px 0 15px 20px;
+    border-radius:0 0 15px 15px ;
+    position: absolute;
+    top:50px;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.40s;
+    z-index: 10;
+}
+
+.menu_li:hover .drop_down 
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop_down p
+{
+    padding:10px 0;
+}
+
+.drop_down p a{
+    color: black;
+    font-weight: 500;
+}
+
+.drop_down p:hover a
+{
+    color: #A8CF45;
+}
+
+header .header_button
+{
+    height: 80px;
+    width: 20%;
+    padding: 20px 0 0 45px;
+}
+
+.header_button a
+{
+    line-height:43px;
+}
+
+header .menu_button
+{
+    display: none;
+}
+
+/*---------------------------------------------------------------------- header end --------------------------------------------------------- */
+
+/*-------------------------------------------------------------------- section 1 start ---------------------------------------------------------*/
+.firstsection
+{
+    height:auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+
+.firstsection .sec1_slider{
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.),rgba(0,0,0,0.20)),
+     url(../image/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg);
+    background-size: 100% 100%;
+	animation:slider 20s  infinite both;
+}
+
+  @keyframes slider{
+    from{
+              transform: scale(1) translateY(0);
+              transform-origin: 50% 16%;
+    }
+    to{
+              transform: scale(1.25) translateY(-15px);
+              transform-origin: top;
+    }
+
+    0%
+    {
+        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),
+        url(../image/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg);
+        background-size: 100% 100%;
+    }
+
+    25%
+    {
+        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),
+         url(../image/hydroponic-of-lettuce-farm-growing-in-greenhouse-.jpg);
+        background-size: 100% 100%;
+    }
+
+    50%
+    {
+        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),
+        url(../image/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg);
+        background-size: 100% 100%;
+    } 
+
+    75%
+    {
+        background:  linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),
+        url(../image/hydroponics-young-asian-farmers-examined-the-quality-of-organic-vegetables-grown-using-hydroponics.jpg);
+        background-size: 100% 100%;
+    }
+
+    100%
+    {
+        background: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),
+         url(../image/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg);
+        background-size: 100% 100%;
+    } 
+}
+  
+
+.firstsection .sec1_info
+{
+    position: absolute;
+    top:170px;
+    left:450px;
+}
+
+.sec1_info h1
+{
+    font-size: 50px;
+    color: white;
+    line-height:55px;
+    animation: info 1s 1 linear;
+}
+
+.sec1_info p{
+    color: white;
+    margin-top: 25px;
+    animation: info 1s 1 linear;
+}
+
+.sec1_info .button
+{
+    display: flex;
+    justify-content: center;
+}
+
+.sec1_info .sec1_button
+{
+    margin:30px 5px;
+}
+
+.sec1_info .sec1_button a
+{
+    height:55px;
+    width:250px;
+    line-height: 55px;
+}
+
+.sec1_info .white a
+{
+    background: white;
+    color: #40B554;
+}
+
+.sec1_info .white a:hover
+{
+    background: #A8CF45;
+    color: white;
+}
+
+.sec1_info .button .started_button
+{
+    animation:get_started 1s 1 linear;
+}
+
+.sec1_info .button .white
+{
+    animation:learn_more 1s 1 linear;
+}
+
+@keyframes info
+
+{
+    from
+    {
+        transform:translateY(-130px);
+        opacity: 0;
+    }
+    to
+    {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes get_started
+
+{
+    from
+    {
+        transform:translateX(-400px);
+        opacity: 0;
+    }
+    to
+    {
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes learn_more
+
+{
+    from
+    {
+        transform:translateX(400px);
+        opacity: 0;
+    }
+    to
+    {
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------------------------- section 1 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 2 start -------------------------------------------------------*/
+.secondsection
+{
+    height:130px;
+    width: 100%;
+    position: relative;
+    background: rgb(242, 238, 238);
+}
+
+.secondsection .head_div
+{
+    height: auto;
+    width:90%;
+    position: absolute;
+    top:-40px;
+    left:140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head_div .icon_div
+{
+    height: auto;
+    width:22%;
+    margin:0 5px;
+    text-align: center;
+}
+
+.icon_div .icon
+{
+    height:90px;
+    width: 90px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 40px;
+    color: #40B554;
+    margin-left:108px;
+}
+
+.icon_div p 
+{
+    font-size: 17px;
+    font-weight:600;
+    margin-top: 10px;
+    letter-spacing:1px;
+}
+
+/*--------------------------------------------------------------------- section 2 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 3 start ---------------------------------------------------------*/
+.thirdsection
+{
+    height: 630px;
+    width: 100%;
+    background:linear-gradient(rgba(251, 250, 250, 0.85),rgba(251, 250, 250,0.95),rgba(251, 250, 250,1)) ,
+    url(../image/bg_pattern.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:120px;
+}
+
+.thirdsection .sec3_info
+{
+    height: auto;
+    width: 40%;
+    padding: 30px;
+    animation: sec3_info 1s 1 linear;
+}
+
+.sec3_info .who_we
+{
+    height:auto;
+    width:100%;
+}
+
+.sec3_info .who_we h4
+{
+    color: #40B554;
+}
+
+.sec3_info .who_we h1{
+    font-size: 40px;
+    margin:15px 0;
+    line-height:45px;
+}
+
+.sec3_info .who_we p
+{
+    color: gray;
+}
+
+.sec3_info .who_we .discover_button a
+{
+    width:170px;
+    line-height:43px;
+    margin-top: 40px;
+}
+
+.thirdsection .sec3_image
+{
+    height: 470px;
+    width: 42%;
+    background: linear-gradient(135deg,#40B554  20%, #A8CF45 80%);
+    padding: 16px;
+    border-radius:10px;
+    position: relative;
+    animation: sec3_image 1s 1 linear;
+}
+
+
+.thirdsection .sec3_image img
+{
+    height: 100%;
+    width: 100%;
+    border-radius:10px;
+}
+
+.sec3_image .year25
+{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top:-30px;
+    right:-30px;
+    background:white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.sec3_image .year25 h1{
+    font-size: 50px;
+    font-weight:700;
+    margin:30px 0 0 10px;
+    color: #40B554;
+}
+
+.sec3_image .year25 p
+{
+    font-size:17px;
+    font-weight:600;
+}
+
+@keyframes sec3_info 
+{
+    from
+    {
+        transform: translateX(-600px); 
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sec3_image
+{
+    from
+    {
+        transform: translateX(600px); 
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*--------------------------------------------------------------------- section 3 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 4 start ---------------------------------------------------------*/
+.fourthsection
+{
+    height:490px;
+    width:100%;
+    background: linear-gradient(rgba(251, 250, 250,1),rgba(251, 250, 250,0.95),rgba(251, 250, 250,0.80)) ,
+    url(../image/bg_pattern.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fourthsection .sec4_card
+{
+    height:340px;
+    width:25%;
+    background:white;    
+    text-align: center;
+    line-height:22px;
+    border-radius:10px;
+    margin:20px 15px 15px 15px;
+    padding:45px;
+    position: relative;
+    animation: card 1.3s 1;   
+}
+
+.sec4_card .sec4_icon
+{
+    height:100px;
+    width: 100px;
+    background:#40B554;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height:100px;
+    font-size: 45px;
+}
+
+.sec4_card p{
+    font-size: 21px;
+    font-weight:700;
+    color: #40B554;
+    margin: 20px 0 15px 0;
+}
+
+.sec4_card span
+{
+    color: gray;
+}
+
+.sec4_card .arrow
+{
+    height: 80px;
+    width: 80px;
+    background: white;
+    color: gray;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size:30px;
+    position: absolute;
+    bottom:-30px;
+    left:150px;
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0 /10%);
+    transition: 0.4s linear;
+}
+
+.sec4_card .arrow:hover
+{
+    transform: rotate(-45deg);
+    color: #A8CF45;
+}
+
+.fourthsection .tractor
+{
+    background:
+    linear-gradient(135deg,#40B554 0%, #A8CF45 100%);
+    animation: tractor 1s 1;
+}
+
+.tractor .sec4_icon
+{
+    background: white;
+    color: #40B554;
+}
+ 
+.tractor p
+{
+    color: white;
+}
+
+.tractor span
+{
+    color: white;
+}
+
+.fourthsection .seed,.apple
+{
+    box-shadow: 0 0 20px rgb(223, 222, 222);
+}
+
+
+@keyframes card 
+{
+    from{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+
+    to 
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes tractor 
+{
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to 
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/*--------------------------------------------------------------------- section 4 end ----------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 5 start ----------------------------------------------------------*/
+
+.fifthsection
+{
+    height: 540px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),
+    url(../image/asian-woman-farmer-holding-a-basket-of-vegetables-in-hydroponic-farm-.jpg);
+    background-size: 100% 190%;
+    background-position:0 -230px;
+    text-align: center;
+    padding-top: 160px;
+    overflow: hidden;
+}
+
+.fifthsection .sec5_info
+{
+    height:300px;
+    width:600px ;
+    margin:auto;
+    animation: sec5_info 1.3s 1;
+}
+
+.sec5_info h1
+{
+    font-size:40px;
+    color: white;
+    line-height:45px ;
+}
+
+.sec5_info p 
+{
+    color: white;
+    margin: 20px 0 40px 0;
+}
+
+.sec5_info .sec5_button a
+{
+    height:47px;
+    width: 180px;
+    line-height:47px;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+@keyframes sec5_info
+{
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/*-------------------------------------------------------------------- section 5 end ----------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 6 start ----------------------------------------------------------*/
+.sixsection
+{
+    height:auto;
+    width: 100%;
+    background:  rgb(240, 240, 240);
+    padding: 80px 0 110px 0;    
+}
+
+.sixsection .sec6_info
+{
+    height: 240px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding:40px;
+    overflow: hidden;
+}
+
+.sixsection .sec6_info .sec6_animation
+{
+    animation: sec6_info 1.3s 1;
+}
+
+.sec6_info h1
+{
+    font-size: 40px;
+    line-height:45px;
+    margin-bottom: 20px;
+}
+
+.sec6_info p
+{
+    color: gray;
+}
+
+.sixsection .sec6_card
+{
+    height:auto;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec6_card .card
+{
+    height: 620px;
+    width: 33.33%;
+    padding:15px;
+    animation: sec6_card  3s 1;
+}
+
+.sec6_card .card .card_heading
+{
+    height:130px;
+    width:100%;
+    background: white;
+    border-radius:10px 10px 0 0;
+    display: flex;
+}
+
+.card_heading .icon
+{
+    height: 100%;
+    width: 20%;
+    font-size:35px;
+    color: #40B554;
+    text-align: center;
+    line-height:83px;
+    border-radius:10px 0 0 0;
+}
+
+.card .card_heading .icon_info
+{
+    height: 100%;
+    width: 80%;
+    border-radius: 0 10px 0 0;
+    padding-top: 27px;
+}
+
+.card_heading .icon_info span
+{
+    font-size:23px;
+    font-weight: bold;
+}
+
+.card_heading .icon_info p
+{
+    color: gray;
+    margin-top: 10px;
+}
+
+.sec6_card .card .image
+{
+    height:250px;
+    width:100%;
+    position: relative;
+}
+
+.card .image img 
+{
+    height: 100%;
+    width: 100%;
+}
+
+.card .darkshadow .image .shadow
+{
+    height:250px;
+    width:100%;
+    background: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition:0.4s linear;
+}
+
+.card .darkshadow:hover .shadow
+{
+    opacity: 1;
+}
+
+.sec6_card .card .info 
+{
+    height: 205px;
+    width: 100%;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+}
+
+.card .info p
+{
+    color: gray;
+}
+
+.card .info .sec6_button a
+{
+    margin-top: 30px;
+    letter-spacing: 1px;
+    line-height: 42px;
+} 
+
+@keyframes sec6_info
+{
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes sec6_card
+{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/*-------------------------------------------------------------------- section 6 end ----------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 7 start ----------------------------------------------------------*/
+.sevensection
+{
+    height: auto;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    padding-bottom: 100px;
+}
+
+.sevensection .sec7_head
+{
+   height:auto;
+   width: 83%;
+   margin: auto;
+}
+
+.sec7_head .sec7_info
+{
+    height: auto;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding:30px;
+}
+
+.sec7_head .sec7_info span
+{
+    font-size: 40px;
+    line-height:45px;
+    font-weight: bold;
+}
+
+.sec7_head .sec7_info p
+{
+    color: gray;
+    margin-top: 20px;
+}
+
+.sec7_head .map
+{
+    height: auto;
+    width: 100%;
+    padding-left:170px;
+}
+
+.sec7_head .map img
+{
+    height: 100%;
+    width: 85%;
+}
+
+.sec7_head .number
+{
+    height: auto;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.sec7_head .number .counting
+{
+    width:25%;
+    border-right: thin solid rgb(200, 192, 192);
+    text-align: center;
+}
+
+.sec7_head .number .counting span
+{
+    font-size: 45px;
+    font-weight: bold;
+    color: #40B554;
+}
+
+.sec7_head .number .counting p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.sec7_head .number .border
+{
+    border: none;
+}
+
+
+/*-------------------------------------------------------------------- section 7 end ----------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 8 start --------------------------------------------------------*/
+.eightsection
+{
+    height:550px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+     url(../image/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-greenhouse--1536x1024.jpg);
+    background-size:110% 110%;
+    background-position:-25px -25px;
+    padding-top:130px;
+    overflow: hidden;
+}
+
+.eightsection .sec8_info
+{
+    height: 300px;
+    width: 40%;
+    margin:auto;
+    padding: 25px;
+    text-align: center;
+    animation: sec8_info 1.4s 1;
+}
+
+.eightsection .sec8_info span
+{
+    font-size:38px;
+    font-weight: bold;
+    line-height: 43px;
+    color: white;
+}
+
+.eightsection .sec8_info p
+{
+    color: white;
+    margin: 20px 0 30px 0;
+}
+
+.eightsection .sec8_info a
+{
+    margin: auto;
+    letter-spacing: 1px;
+    width: 160px;
+    line-height: 42px;
+}
+
+@keyframes sec8_info
+{
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/*-------------------------------------------------------------------- section 8 end ----------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 9 start ----------------------------------------------------------*/
+.ninthsection
+{
+    height: auto;
+    width: 100%;
+    background:rgb(240, 240, 240);
+    padding: 110px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ninthsection .sec9_iamge
+{
+    height:780px;
+    width:38%;
+    background:linear-gradient(135deg,#40B554 0%,#A8CF45 100%);
+    border-radius: 10px;
+    position: relative;
+    animation: sec9_image 1.3s 1;
+}
+
+.ninthsection .sec9_iamge img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top:-30px;
+    left:15px;
+}
+
+.ninthsection .sec9_info
+{
+    height:auto;
+    width:46%;
+    padding:50px 15px 50px 70px;
+}
+
+.sec9_info .sec9_heading
+{
+    height: auto;
+}
+
+.sec9_info .sec9_heading p
+{
+    font-weight:600;
+    color: #40B554;
+}
+
+.sec9_info .sec9_heading h1
+{
+    font-size: 40px;
+    line-height: 48px;
+    margin:21px 0 ;
+}
+
+.sec9_info .sec9_heading span
+{
+    display: block;
+    color: gray;
+    padding-bottom:23px;
+}
+
+.sec9_info .product_card
+{
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec9_info .product_card .card
+{
+    height: 50%;
+    width: 50%;
+    padding: 10px 0 20px 0;
+}
+
+.product_card .card .icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    color: #40B554;
+    background: #40B5542B;
+}
+
+.product_card .card h2
+{
+    font-size: 22px;
+    margin:20px 0 10px 0;
+}
+
+.product_card .card span
+{
+    color: gray;
+}
+
+@keyframes sec9_image
+{
+    from{
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/*-------------------------------------------------------------------- section 9 end ----------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 10 start ---------------------------------------------------------*/
+
+.tensection
+{
+    height: auto;
+    width: 100%;
+    background:rgb(232, 232, 232);
+    padding: 50px 0 80px 0;
+}
+
+.tensection .sec10_heading
+{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.tensection .sec10_heading h1
+{
+    font-size: 40px;
+    padding-top:30px;
+}
+
+.tensection .sec10_heading .line
+{
+    height: 3px;
+    width:80px;
+    background: #40B554;
+    margin:30px 0 0 47%;
+}
+
+.tensection .sec10_card
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tensection .sec10_card .newscard
+{
+    height:550px;
+    width: 24%;
+    background:white;
+    border-radius: 10px;
+}
+
+.sec10_card .newscard .image
+{
+    height: 250px;
+    width: 100%;
+}
+
+.newscard .image img 
+{
+    height: 100%;
+    width: 100%;
+    border-radius:10px 10px 0 0;
+}
+
+.sec10_card .newscard .sec10_info
+{
+    height: auto;
+    width: 100%;
+    padding:20px;
+}
+
+.newscard .sec10_info a
+{
+    font-size: 23px;
+    font-weight: bold;
+    color:#40B554;
+}
+
+.newscard .sec10_info p
+{
+    font-size: 14px;
+    color:gray;
+    margin: 15px 0;
+}
+
+.newscard .sec10_info span
+{
+    color: gray;
+}
+
+/*-------------------------------------------------------------------- section 10 end ---------------------------------------------------------*/
+
+/*-------------------------------------------------------------------- section 11 start ---------------------------------------------------------*/
+
+.elevensection
+{
+    height: 650px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.40),rgba(71, 167, 12, 0.3)),
+    url(../image/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg);
+    background-size: 100% 115%;
+    padding-top: 100px;
+}
+
+.elevensection .sec11_heading
+{
+    height: 100px;
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sec11_heading .sec11_animation
+{
+    animation: about_us 1.3s 1;
+}
+
+.elevensection .sec11_heading p
+{
+    color: white;
+    font-weight: bold;
+}
+
+.elevensection .sec11_heading h1
+{
+    font-size: 38px;
+    color: white;
+    margin-top: 20px;
+}
+
+.elevensection .about_us
+{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:25px 0;
+}
+
+.elevensection .about_us .slider
+{
+    height: 250px;
+    width: 26%;
+    background: white;
+    margin:0 20px 0 0;
+    border-radius: 10px;
+    text-align: center;
+    padding:32px;   
+    cursor: grab;
+}
+
+.about_us .slider span
+{
+    font-size:19px;
+    line-height: 30px;
+    color: gray;
+}
+
+.slider .profile
+{
+    height:70px;
+    width:65%;
+    margin:20px 60px 0 90px;
+    display: flex;
+}
+
+.slider .profile .icon_img
+{
+    height: 45px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.profile .icon_img img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.slider .profile .pro_name
+{
+    width: 93%;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.profile .pro_name .name 
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 0 0px 0;
+}
+
+.profile .pro_name .business
+{
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+@keyframes about_us
+{
+    from{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/*-------------------------------------------------------------------- section 11 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 12 start ---------------------------------------------------------*/
+.twelvesection
+{
+    height: auto;
+    width: 100%;
+    background:rgb(240, 240, 240);
+    padding:15px 0;
+}
+
+.twelvesection .logo_slider
+{
+    height:auto;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.twelvesection .logo_slider .logo
+{
+    height: 100%;
+    width: 16.66%;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------- section 12 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- section 13 start ---------------------------------------------------------*/
+.thirteensection
+{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(135deg,#40B554,#A8CF45);
+    padding: 50px 0 40px 0;
+}
+
+.thirteensection .sec13_info
+{
+    height: auto;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.thirteensection .sec13_info h1
+{
+    font-size: 35px;
+    color: white;
+}
+
+.thirteensection .sec13_info a{
+
+    line-height: 42px;
+    margin:20px 0 0 36%;
+}
+
+/*-------------------------------------------------------------------- section 13 end ---------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------- footer start ---------------------------------------------------------*/
+
+footer
+{
+    height: auto;
+    width: 100%;
+    background: rgb(34, 34, 34);
+    padding: 70px 0 40px 0; 
+}
+
+footer .footer_main
+{
+    height:auto;
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: thin solid gray;
+}
+
+.footer_main .footerlogo
+{
+    width:28%;
+    padding-right:60px;
+}
+
+.footer_main .footerlogo p
+{
+    color: white;
+    margin-top:15px;
+}
+
+.footer_main .services
+{
+    height: 100%;
+    width: 22%;
+}
+
+.footer_main .company
+{
+    height: 100%;
+    width: 20%;
+}
+
+.footer_main h3
+{
+    color: white;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.footer_main ul
+{
+    list-style: none;
+}
+
+.footer_main ul li a
+{
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer_main ul li
+{
+    margin-bottom: 4px;
+}
+
+.footer_main ul li:hover a
+{
+    color: #40B554;
+}
+
+.footer_main .newsletter
+{
+    height: 100%;
+    width:30%;
+}
+
+.footer_main .newsletter p
+{
+    color: white;
+}
+
+.footer_main .newsletter input
+{
+    display: block;
+    height: 48px;
+    width: 350px;
+    border-radius: 40px;
+    margin:20px 0 8px 0;
+    padding-left: 15px;
+    border: none;
+}
+
+.footer_main .newsletter input::placeholder
+{
+    color: gray;
+    font-size: 17px;
+}
+
+.footer_main .newsletter input:focus 
+{
+    outline: none;
+}
+
+.footer_main .newsletter a
+{
+    height: 45px;
+    width:350px;
+    line-height: 43px;
+    letter-spacing: 1px;
+}
+
+/*-------------------------------------------------------------------- footer end ---------------------------------------------------------*/

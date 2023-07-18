@@ -1,0 +1,160 @@
+@media(max-width:500px)
+{
+
+    /*----------------------------------------------------- nav start -----------------------------------------------*/
+    nav .logo{width: 80%;text-align:start;padding-left: 10px;}
+    nav .info{width: 20%;display:none;}
+    nav .menu button
+    {
+        display: block;
+        color:black;
+        background: white;
+        box-shadow: 0 0 10px rgb(203, 202, 202);
+        font-size:20px ;
+        margin:25px 0 0 10px;
+        padding:15px;
+        cursor: pointer;
+        border: none;
+    }
+    /*----------------------------------------------------- nav end -----------------------------------------------*/
+
+
+    /*------------------------------------------------- section 1 start ---------------------------------------------*/
+    .sec1_info
+    {
+        width: 100%;
+        padding: 100px 0px 35px 20px ;
+    }
+
+    .sec1_info h1
+    {
+        font-size: 25px;
+        margin: 10px 50px 20px 0;
+        line-height: 27px;
+    }
+
+    .sec1_info h1 br
+    {
+        display:none;
+    }
+
+    .sec1_info .paragraph
+    {
+        font-size: 15px;
+        letter-spacing: 0;
+        padding:10px 0 10px 20px;
+        margin:  0 0 30px 0;
+    }
+
+    .sec1_image
+    {
+        width:90%;
+        margin: auto;
+    }
+
+    /*------------------------------------------------- section 1 end ---------------------------------------------*/
+
+
+    /*------------------------------------------------- section 2 start --------------------------------------------*/
+    
+    .about_us
+    {
+        width: 100%;
+    }
+
+    .sec2_image 
+    {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sec2_info
+    {
+        width: 95%;
+        margin: auto;
+    }
+ 
+    .sec2_info .about
+    {
+        margin-top: 20px;
+    }
+    .sec2_info h1
+    {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .sec2_info .paragraph
+    {
+        font-size: 14px;
+        margin-bottom:30px;
+    }
+
+    .sec2_info p br 
+    {
+        display: none;
+    }
+
+    /*------------------------------------------------- section 2 end --------------------------------------------*/
+
+
+    /*----------------------------------------------- section 3 start --------------------------------------------*/
+
+    .thirdsection .sec3_info
+    {
+        width: 100%;
+        padding:100px 10px 200px 10px;
+    }
+
+    .thirdsection .sec3_info h1
+    {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .sec3_info .paragraph
+    {
+        font-size: 13px;
+        margin-bottom:0px;
+    }
+
+    .sec3_info ul li
+    {
+        width: 100%;
+        margin:50px 0 0px 0;
+        line-height:10px;
+    }
+
+    .sec3_info ul li i
+    {
+    font-size: 27px;
+    line-height:10px;
+    }
+
+    .sec3_info .startbutton
+    {
+        top:650px;
+        left:190px;
+    }
+
+    .thirdsection .sec3_image
+    {
+        display: none;
+    }
+
+    /*------------------------------------------------- section 3 end ----------------------------------------------*/
+
+    /*----------------------------------------------- section 4 start --------------------------------------------*/
+    .fourthsection .Services h1
+    {
+        font-size: 23px;
+        margin:13px 0 40px 0;
+    }
+    .Services .head_card .card
+    {
+        width: 90%;
+    }
+
+    /*----------------------------------------------- section 4 end --------------------------------------------*/
+}
+

@@ -1,0 +1,356 @@
+@media (max-width:500px)
+{
+
+
+    /*-------------------------------------------------------------------------- header start  -----------------------------------------------------------------*/
+    .contectinfo .contectinfo_ul .contectinfo_li
+    {
+        width: 50%;
+        border-right: none;
+    }
+
+    .contectinfo .contectinfo_ul .blank
+    {
+        display: none;
+    }
+
+    .bigheader .search
+    {
+        width: 100%;
+        padding-left: 55px;
+    }
+
+    .bigheader .logo
+    {
+        width: 100%;
+    }
+
+    .bigheader .social
+    {
+        width: 100%;
+    }
+
+    .bigheader .social .socialnav
+    {   
+        list-style: none;
+        display: flex;
+        padding:0 0 20px 44%;
+    } 
+
+    .bigheader .social .socialnav li
+    {
+        padding-left:35px;
+        padding-top: 20px;
+    }
+
+    .bigheader .social .socialnav .facebook
+    {
+        padding-left: 10px
+    }
+
+    .bigheader .social .socialnav .share
+    {
+        font-size: 16px;
+    }
+
+    nav
+    {
+        height: 55px;
+    }
+
+    nav .navbar
+    {
+        display: none;
+    }
+
+    nav .bars
+    {
+        display: block;
+    }
+
+    nav .shopping
+    {
+        width:30%;
+        line-height: 55px;
+    }
+
+    nav .shopping i
+    {
+        font-size:18px;
+        padding: 12px;
+    }
+
+    /*-------------------------------------------------------------------------- header end  -----------------------------------------------------------------*/
+    
+
+    /*-------------------------------------------------------------------------- Bigimage start  --------------------------------------------------------------*/
+    .bigimage 
+    {
+        height: 400px;
+        background-position-y:-0px ;
+    }
+
+    .bigimage h3
+    {
+        font-size: 35px;
+        letter-spacing:5px;
+        padding-top:120px; 
+    }
+
+    .bigimage p{
+        font-size:16px;
+        letter-spacing:6px;
+    }
+
+    /*-------------------------------------------------------------------------- Bigimage end  --------------------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------------- mainbordereffect start  -----------------------------------------------------*/
+    .mainbordereffect
+    {
+        padding:50px 0;
+    }
+
+    .bordereffect1,.bordereffect2
+    {
+        height:250px;
+        width:90%;
+    }
+
+
+    .mainbordereffect span 
+    {
+        font-size:25px;
+    }
+
+    .mainbordereffect .effect 
+    {
+        height: 180px;
+        width: 90%;
+        font-size: 16px;
+        padding: 110px 11px 0 0;
+    }
+
+    /*-------------------------------------------------------------------------- mainbordereffect end  -------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------------- savesection start  -------------------------------------------------------*/
+
+
+    .savesection .save_image
+    {
+        height: 330px;
+        width: 100%;
+    }
+
+    .savesection .save_info
+    {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .save_info .sub_save_info
+    {
+        width: 100%;
+    }
+
+    .save_info .sub_save_info h3{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .save_info .sub_save_info .para
+    {
+        margin: 13px 0 35px 0;
+    }
+
+    /*-------------------------------------------------------------------------- savesection end  -------------------------------------------------------*/
+    
+    /*-------------------------------------------------------------------------- trendingsection start  -------------------------------------------------------*/
+    .trendingsection
+    {
+        padding:45px 0;
+    }
+
+    .trendingsection .heading
+    {
+        width:100%;
+        margin-bottom: 25px;
+    }
+    
+    .trendingsection .heading h1
+    {
+        font-size:32px;
+        letter-spacing: 2px;
+    }
+
+    .trendingsection .trend_mainborder
+    {
+        width:95%;
+    }
+
+    .trend_mainborder .trend_effect1
+    {
+        height:580px;
+        width:100%;
+    }
+
+    .trend_mainborder .trend_effect2
+    {
+        height:450px;
+        width:100%;
+    }
+
+    .trend_effect2 span 
+    {
+        top: 70px;
+        right:50px;
+    }
+
+    .trend_effect2 .effect2
+    {
+        padding: 105px 20px 0 0;
+    }
+
+    /*-------------------------------------------------------------------------- trendingsection end  -------------------------------------------------------*/
+ 
+    /*-------------------------------------------------------------------------- flatoffersection start  -----------------------------------------------------*/
+    .flatoffersection
+    {
+        gap: 20px;
+    }
+    
+    .flatoffersection .flatoffer1
+    {
+        height:250px;
+        width: 100%;
+    }
+
+    .flatoffersection .flatoffer1
+    {
+        line-height:250px;
+    }
+    
+    /*-------------------------------------------------------------------------- flatoffersection end  -----------------------------------------------------*/
+
+    /*-------------------------------------------------------------------------- newarrivals start  -----------------------------------------------------*/
+    .newarrivals
+    {
+        height: 1140px;
+        padding:50px 15px;
+    }
+
+    .newarrivals .product_section
+    {
+        width: 100%;
+    }
+
+    .product_section .newarriv_heading
+    {
+        margin-bottom: 25px;
+    }
+
+    .newarriv_heading h1{
+        font-size:32px;
+    }
+
+
+    .newarrivals .category li
+    {
+        width:98%;
+        border:thin solid rgb(227, 222, 222);
+    }
+
+    .newarrivals .category li i
+    {
+        bottom:15px;
+        right:-40%;
+        font-size:25px;
+        color:black ;
+    }
+
+    .newarrivals .category li:hover i
+    {
+        color:black;
+    }
+
+    /*-------------------------------------------------------------------------- newarrivals end  -----------------------------------------------------*/
+
+
+    /*-------------------------------------------------------------------------- discount start  -------------------------------------------------------*/
+    .discount
+    {
+        height: 320px;
+        padding-top: 80px; 
+    }
+
+    .discount h1
+    {
+        font-size: 28px;
+    }
+
+    /*-------------------------------------------------------------------------- discount end  -------------------------------------------------------*/
+
+    /*-------------------------------------------------------------------------- feature start  -------------------------------------------------------*/
+    .feature
+    {
+        padding:50px 55px 30px 55px;
+    }
+    
+    .feature_container .feature_card
+    {
+        width: 100%;
+    }
+
+    .feature_container .feature_card
+    {
+        margin-bottom: 20px;
+    }
+
+    /*-------------------------------------------------------------------------- feature end  -------------------------------------------------------*/
+
+
+    footer
+    {
+        padding:30px 20px;
+    }
+
+    .footer_child .footer_card
+    {
+        grid-template-columns:100%;
+    }
+
+    .footer_social .footer_socialnav li
+    {
+        padding-top:20px;
+    }
+
+    .our_info p,.store_info p,.flickr_post p
+    {
+        margin-top: 20px;
+    }
+
+    .footer_card .flickr_post
+    {
+        padding: 0 35px 0 10px;
+    }
+
+    .flickr_post ul{
+        grid-template-rows:repeat(3,33%);
+        gap:12px;
+    }
+
+    .footer_child .sign_up
+    {
+        padding:15px;
+    }
+
+    .sign_up input
+    {
+        width: 313px;
+    }
+
+    .footer_child .sign_up h2{
+        font-size:20px;
+        margin:0 0 12px 30px;
+    }
+}

@@ -1,0 +1,846 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:sans-serif;
+   text-decoration: none;
+}
+
+h1
+{
+    font-size: 45px;
+    font-weight:800;
+}
+
+
+/*-------------------------------------------------------- nav start --------------------------------------------------*/
+
+nav
+{
+    height: 100px;
+    width: 100%;
+    background: lightblue;
+    display: flex;
+    /* position: fixed; */
+    /* top: 0; */
+    /* z-index: 10; */
+}
+
+nav .logo
+{
+    height: 100px;
+    width:33%;
+    /* background: lightpink; */
+    text-align: center;
+    line-height: 130px;
+}
+
+nav .info
+{
+    height: 100px;
+    width:67%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .info .info-ul
+{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    margin:20px 0 0 110px;
+}  
+
+nav .info .info-ul .info-li
+{
+    position: relative;
+}
+
+nav .info .info-ul .info-li a
+{
+    color: black;
+    padding:20px 20px 30px 20px;
+}
+
+nav .info .info-ul .info-li a:hover
+{
+    color: #ff5a3c;
+}
+
+nav .info .info-ul .info-li .addlist
+{
+    background: #ff5a3c;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+nav .info .info-ul .info-li .addlist:hover
+{
+    background: white;
+    color: black;
+}
+
+nav .info .info-ul .info-li .drop-down
+{ 
+    width:240px;
+    background-color: pink;
+    position: absolute;
+    top:60px;
+    left:10px;
+    font-size:16px;
+    list-style: none;
+    border-top: 5px solid #ff5a3c;
+    padding:15px 0 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+nav .info .info-ul .info-li:hover .drop-down
+{
+    opacity: 1;
+    visibility: visible; 
+    top:45px;
+}
+
+nav .info .info-ul .info-li .drop-down li
+{
+  padding:12px 25px 12px 10px;
+  position: relative;
+  
+}
+
+nav .info .info-ul .info-li .drop-down li img
+{
+    height:auto;
+    width: 130px;
+    position: absolute;
+    box-shadow:  0 0 10px rgb(174, 173, 173);
+    bottom:-22px;
+    right:-16px;
+    z-index: 10;
+    opacity: 0;
+    transition:0.3s;
+}
+
+nav .info .info-ul .info-li .drop-down li:hover img
+{
+    opacity: 1;
+    bottom:-8px;
+}
+
+nav .info-li .drop-down .videomap
+{
+    font-size: 10px;
+    position: absolute;
+    padding:2px 4px 1px 4px;
+    border-radius:2px;
+    border: none;
+    background: #ff5a3c;
+    color: white;
+    top:-2px;
+    left:18px;
+    cursor: pointer;
+}
+
+nav .info-li .drop-down .fa-angles-right
+{
+    padding-left: 59px;
+}
+
+nav .info-li .drop-down .submenu
+{
+    width: 240px;
+    background-color: pink;
+    list-style: none;
+    position: absolute;
+    top:50px;
+    left:240px;
+    padding: 10px 0;
+    border-top: 5px solid #ff5a3c;
+    opacity: 0;
+    transition: 0.3s;
+}
+nav .info-li .drop-down .other-pages:hover .submenu
+{
+    opacity: 1;
+    top: 10px;
+}
+
+.page
+{
+   height: 400px;
+   width:1200px;
+   background: pink;
+   position: absolute;
+   top:45px;
+   right:-240px;
+   display: flex;
+   display: none;
+   z-index: 1;
+}
+
+nav .info .info-ul .info-li:hover .page
+{
+    display: block;
+    display: flex;
+}
+
+.page .sub-page
+{
+    height: 100%;
+    width: 25%;
+    border-top:5px solid #ff5a3c ;
+    padding:25px 0 0 25px;
+    font-size: 16px;
+}
+
+.page .sub-page h4
+{
+    height: 40px ;
+    width: 250px;
+    background: gray;
+    padding:10px 0 0 20px ;
+}
+
+.page .sub-page ul
+{
+    list-style: none;
+}
+
+.page .sub-page li
+{
+   padding:27px 0 0 0;
+}
+
+.page img
+{
+    
+    height:320px;
+    width: 90%;
+    margin-top:2px;
+    border: 10px solid black;
+}
+
+.page .sub-page ul:hover .anc
+{
+    color: #ff5a3c;
+}
+
+nav .menu button{
+    display: none;
+}
+
+
+/*----------------------------------------------------- nav end -------------------------------------------------*/
+
+
+
+/*------------------------------------------------- section 1 start ---------------------------------------------*/
+.firstsection
+{
+    /* height: 600px; */
+    width: 100%;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec1_info
+{
+    /* height:600px; */
+    width: 55%;
+    background: yellow;
+    padding:120px 0 0 170px;
+}
+
+.sec1_info .house{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    animation: house 2s 1;
+}
+
+.sec1_info i
+{
+    color: #ff5a3c;
+}
+
+@keyframes house
+{
+    from{transform: translateY(30px);opacity: 0;}
+    to{transform: translate(0px);opacity: 1;}
+}
+
+.sec1_info h1{
+    /* font-size: 45px; */
+    /* font-weight:800; */
+    line-height: 45px;
+    margin: 20px 0;
+    animation: h1 2s 1;
+    animation-delay:1s;
+}
+
+.sec1_info h1 span{
+    color: #ff5a3c;
+}
+
+@keyframes h1
+{
+    from{transform: translateY(80px);opacity: 0;}
+    to{transform: translate(0px);opacity: 1;}
+}
+
+.sec1_info .paragraph{
+    padding:10px 0 10px 30px;
+    border-left: 1px solid black;
+    margin:  0 0 40px 0;
+    letter-spacing: 1px;
+    animation: paragraph 2s 1;
+    animation-delay:1.5s;
+}
+
+@keyframes paragraph
+{
+    from{transform: translateY(50px);opacity: 0;}
+    to{transform: translate(0px);opacity: 1;}
+}
+
+.sec1_info .headbutton
+{
+    height: 55px;
+    /* background-color: lightblue; */
+    display: flex;
+    gap:20px ;
+    animation:headbutton 2s 1;
+    animation-delay:2s;
+}
+
+@keyframes headbutton
+{
+    from{transform: translateY(50px);opacity: 0;}
+    to{transform: translate(0px);opacity: 1;}
+}
+
+.sec1_info .headbutton .make_enquiry
+{
+    height: 55px;
+    width: 190px;
+    font-size: 16px;
+    position: relative;
+    border: none;
+    box-shadow: inset 0 0 0 0.8px black;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sec1_info .headbutton .make_enquiry a{
+    color: white;
+    transition: 0.3s;
+}
+
+.sec1_info .headbutton .make_enquiry::after
+{
+    content: "";
+    height:55px;
+    width: 190px;
+    background: #ff5a3c;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.sec1_info .headbutton .make_enquiry:hover:after
+{
+    left: 190px;
+}
+
+.sec1_info .headbutton .make_enquiry:hover a{
+    color: black;
+}
+
+.sec1_info .headbutton .play_button
+{
+    height: 55px;
+    width: 55px;
+    background: black;
+    text-align: center;
+    line-height:55px ;
+    border-radius:50% ;
+}
+
+.sec1_image
+{
+    /* height:600px; */
+    width:45%;
+}
+
+.sec1_image img
+{
+    height: 100%;
+    width:100%;
+}
+
+/*----------------------------------------------- section 1 end --------------------------------------------*/
+
+/*----------------------------------------------- section 2 start --------------------------------------------*/
+.secondsection
+{
+    /* height: 950px; */
+    width: 100%;
+    background: pink;
+    padding: 100px 0 100px 0;
+    
+}
+
+.about_us
+{
+    /* height: 750px; */
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* background: yellow; */
+}
+
+.sec2_image
+{
+    /* height: 700px; */
+    width: 50%;
+    /* background: lightcoral; */
+    margin-top:25px;
+}
+
+.sec2_image img 
+{
+    height: 100%;
+    width: 97%;
+    padding: 0 15px;
+
+}
+
+.sec2_info
+{
+  /* height: 750px; */
+  width: 50%;
+  /* background: lightblue; */
+}
+
+.sec2_info .about
+{
+    color: red;
+}
+
+.sec2_info h1{
+    line-height: 55px;
+    margin: 15px 0;
+}
+
+.sec2_info .paragraph
+{
+    font-size: 17px;
+    margin-bottom:40px;
+    color: gray;
+
+}
+
+.headicon
+{
+    height: 135px;
+    width: 100%;
+    /* background: gray; */
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+    border: thin solid rgb(237, 229, 229);
+    transition: 0.4s;
+}
+
+.headicon:hover
+{
+    box-shadow:  0 0 20px rgb(169, 168, 168);
+}
+
+.headicon .icon{
+
+    width: 17%;
+    /* background: lightyellow; */
+    font-size: 50px;
+    text-align: center;
+    line-height:135px;
+    color: #ff5a3c;
+}
+
+.headicon::after
+{
+    content: "";
+    position: absolute;
+    top:63px;
+    left: 0;
+    height: 10px;
+    width: 5px;
+    background: #ff5a3c;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.headicon:hover::after
+{
+    opacity: 1;
+    transform:scaleY(10)
+}
+
+.headicon .icon_info
+{
+    width: 83%;
+}
+
+.headicon .icon_info h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding:20px 0 15px 0;
+}
+
+.headicon .icon_info a
+{
+    color: black;
+    transition: 0.4s;
+}
+
+.icon_info h3:hover a{
+    color: #ff5a3c;
+}
+
+.icon_info p{
+    color: gray;
+}
+
+/*----------------------------------------------- section 2 end --------------------------------------------*/
+
+
+/*----------------------------------------------- section 3 start --------------------------------------------*/
+.thirdsection
+{
+    /* height: 750px; */
+    width: 100%;
+    background: lightblue;
+    display: flex;
+}
+
+.thirdsection .sec3_info
+{
+    /* height: 100%; */
+    width: 52%;
+    background:rgb(239, 186, 239);
+    position: relative;
+    padding:110px 110px 0 160px;
+}
+
+.sec3_info .startbutton
+{
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: #ff5a3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height:80px;
+    font-size: 23px;
+    color: white;
+    position: absolute;
+    top:330px;
+    right:-60px;
+    z-index:0;
+}
+
+.sec3_info .startbutton::after{
+    
+    content:"";
+    height: 80px;
+    width: 80px;
+    background: #ff5a3c;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    animation: startbutton 1s infinite;
+}
+
+@keyframes startbutton
+{
+    from{transform: scale(1);opacity: 1;}
+    to{transform: scale(1.4);opacity: 0;}
+}
+
+.sec3_info .orange
+{
+    color: #ff5a3c;
+    margin-bottom:10px ;
+}
+
+.sec3_info .paragraph
+{
+    color: gray;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin:20px 0 50px 0;
+}
+.sec3_info ul
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.sec3_info ul li
+{
+    width:50%;
+    display: flex;
+    line-height:27px;
+    margin: 0 0 25px 0;
+    gap:15px;
+}
+
+.sec3_info ul li i
+{
+    font-size: 27px;
+    line-height:50px;
+}
+
+.thirdsection .sec3_image
+{
+    height: 750px;
+    width: 48%;
+    background: url(../image/21.jpg);
+    background-size: 104% 100%;
+    background-position-x:-30px ;
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------------------- section 3 end --------------------------------------------*/
+
+
+/*----------------------------------------------- section 4 start --------------------------------------------*/
+
+
+.fourthsection
+{
+    /* height: 750px; */
+    width: 100%;
+    background: lightcoral;
+    padding: 100px 0 ;
+    text-align: center;
+}
+
+.fourthsection .Services
+{
+    /* height:550px; */
+    width: 100%;
+    background: lightblue;
+}
+
+.fourthsection .Services .our_ser{
+    color: #ff5a3c;
+}
+
+.fourthsection .Services h1{
+    margin:5px 0 35px 0;
+}
+
+.fourthsection .Services .head_card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Services .head_card .card
+{
+    height:410px ;
+    width: 370px;
+    background: white;
+    text-align: center;
+    padding:0 20px;
+    position: relative;
+    border: thin solid rgb(228, 220, 220);
+    box-shadow: 0 0 20px rgb(195, 191, 191);
+}
+
+.head_card .card img 
+{
+    margin: 30px 0 20px 0;
+}
+
+.head_card .card .paragraph
+{
+    margin:20px 0  30px 0;
+    font-size: 15px;
+    line-height: 25px;
+    color:gray;
+}
+
+.head_card .card h2{
+    font-weight: 800;
+}
+
+.head_card .card .h2_a
+{
+    color: black;
+}
+
+.head_card .card .h2_a:hover
+{
+    color: #ff5a3c;
+    transition: 0.3s;
+}
+
+.head_card .card .find
+{
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.head_card .card:hover .find
+{
+    color: #ff5a3c;
+}
+
+.Services .head_card .card::after
+{
+    content: "";
+    height: 5px;
+    width:0%;
+    background: #ff5a3c;
+    position:absolute ;
+    bottom: 0;
+    left: 0;
+    transition: 0.7s;
+}
+
+.Services .head_card .card:hover::after
+{
+    width: 100%;
+}
+
+
+/*----------------------------------------------- section 4 end --------------------------------------------*/
+
+
+.fifthsection
+{
+    height: 900px;
+    width: 100%;
+    background: lightblue;
+    background:url(../image/22.jpg);
+    background-size:100% 78%;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+
+.fifthsection .upcoming
+{
+    height:730px;
+    width: 80%;
+    margin:auto;
+    background: yellow;
+}
+
+.upcoming .upcoming_info
+{
+    height: 200px;
+    width: 100%;
+    background: pink;
+}
+
+.upcoming .upcoming_info p
+{
+    color: white;
+}
+
+.upcoming_info .dream_arrow
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.upcoming_info .dream_arrow h1
+{
+    line-height: 55px;
+    color: white;
+}
+
+.upcoming_info .dream_arrow .arrow
+{
+    display: flex;
+}
+
+.upcoming_info .dream_arrow .arrow a
+{
+    display: block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height:60px;
+    margin:40px 0 0 20px;
+}
+
+.upcoming_info .dream_arrow .arrow .left
+{
+    background: #ff5a3c;
+    color: white;
+}
+
+.upcoming_info .dream_arrow .arrow .right
+{
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.upcoming_info .dream_arrow .arrow .right:hover
+{
+    background: #ff5a3c;
+    color: white;
+}
+
+.upcoming .upcoming_image
+{
+    height: 530px;
+    width: 100%;
+    background: lightcoral;
+    display: flex;
+    padding:30px;
+}
+
+.upcoming .upcoming_image .image
+{
+    height:470px;
+    width:55%;
+    background: gray;
+    margin-right:18px;
+}
+
+.upcoming .upcoming_image .image img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.upcoming .upcoming_image .info 
+{
+    height:470px;
+    width: 43%;
+    background: gray;
+}

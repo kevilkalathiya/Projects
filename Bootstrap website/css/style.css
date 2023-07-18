@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.all_btn {
+  border: 2px solid black;
+  background: #a8d741;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.all_btn:hover {
+  border: 2px solid black;
+  background: white;
+  color: black;
+  transform: rotate(5deg) scale(1.1);
+  box-shadow: 0 13px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.bg_green {
+  background: #a8d741;
+}
+
+.text_green {
+  color: #a8d741;
+}
+
+.card_hover {
+  transition: 0.3s ease;
+}
+
+.card_hover:hover {
+  transform: rotate(-1.5deg) scale(1.02);
+}
+
+.card_shadow:hover {
+  box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
+}
+
+/*---------------------------------------------------------------------------- nav start --------------------------------------------------------------*/
+nav .navbar-brand {
+  font-weight: 500;
+}
+
+nav li {
+  font-weight: 500;
+}
+
+/*---------------------------------------------------------------------------- nav end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- create_your start --------------------------------------------------------------*/
+.sub_create {
+  border-radius: 30px;
+  background: #a8d741;
+}
+
+.sub_create .btn {
+  background: #232323;
+  color: white;
+  border: 2px solid white;
+}
+
+.sub_create .btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+/*---------------------------------------------------------------------------- create_your end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- howit_work start --------------------------------------------------------------*/
+.howit_work {
+  border-radius: 30px;
+}
+
+.round2 {
+  border-radius: 20px;
+}
+
+.white_btn {
+  background: white;
+}
+
+.white_btn:hover {
+  background: #a8d741;
+}
+
+/*---------------------------------------------------------------------------- howit_work end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- Professional_Tools start --------------------------------------------------------------*/
+
+.profess_card {
+  border-radius: 30px;
+}
+
+.profess_card img {
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.profess_card .border_down {
+  border-radius: 0 0 20px 20px;
+}
+
+.read {
+  position: relative;
+}
+
+.read::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.read:hover::after {
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------------- Professional_Tools end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- T-Shirt_with start --------------------------------------------------------------*/
+.T-Shirt_with {
+  border-radius: 30px;
+  background: #eeeeee;
+  margin-bottom: 32px;
+}
+
+.T-Shirt_with img {
+  border-radius: 30px 0 0 30px;
+}
+/*---------------------------------------------------------------------------- T-Shirt_with end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- Our_Team start --------------------------------------------------------------*/
+
+.Our_Team .team_card {
+  border-radius: 30px;
+}
+
+.team_card img {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.team_card .border_down {
+  border-radius: 0 0 20px 20px;
+}
+
+/*---------------------------------------------------------------------------- Our_Team end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- view_video start --------------------------------------------------------------*/
+
+.view_video img {
+  height: 450px;
+  width: 870px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.view_video {
+  position: relative;
+}
+.view_video i {
+  position: absolute;
+  top: 43%;
+  left: 47%;
+}
+
+/*---------------------------------------------------------------------------- view_video end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- Our_partner start --------------------------------------------------------------*/
+
+.Our_partner {
+  background: #eeeeee;
+  border-radius: 30px;
+}
+
+.Our_partner img {
+  height: 90px;
+  width: 140px;
+}
+
+.Client {
+  background: #eeeeee;
+  border-radius: 30px;
+}
+
+/*---------------------------------------------------------------------------- Our_partner end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- Client start --------------------------------------------------------------*/
+
+.Client img {
+  border-radius: 15px;
+}
+
+/*---------------------------------------------------------------------------- Client end --------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------- form start --------------------------------------------------------------*/
+
+.send_mess {
+  border-radius: 30px;
+}
+
+.send_mess input {
+  height: 48px;
+  border-radius: 10px;
+}
+
+.send_mess input::placeholder {
+  font-size: 18px;
+}
+
+.send_mess textarea {
+  border-radius: 10px;
+}
+
+.send_mess textarea::placeholder {
+  font-size: 18px;
+}
+
+/*---------------------------------------------------------------------------- form end --------------------------------------------------------------*/
